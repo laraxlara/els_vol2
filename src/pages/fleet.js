@@ -23,7 +23,7 @@ const fleet = [
     alt: "Luxury Sedan Mercedes E Class",
     name: "Luxury Sedan Mercedes E Class",
     char: "Max People: 3 || Max Luggage: 3",
-    description: "Ultimate offer for luxorious and high class rides."
+    description: "Ultimate offer for luxorious and high class rides.",
   },
   {
     id: 3,
@@ -39,7 +39,8 @@ const fleet = [
     alt: "Luxury SUV Cadillac Escalade",
     name: "Luxury SUV Cadillac Escalade",
     char: "Max People: 6 || Max Luggage: 6",
-    description: "Comfortable and opulent option combined with extreme endurance will transform your busy day into an enjoyful one.",
+    description:
+      "Comfortable and opulent option combined with extreme endurance will transform your busy day into an enjoyful one.",
   },
   {
     id: 5,
@@ -47,7 +48,8 @@ const fleet = [
     alt: "Luxury SUV Mercedes Sprinter",
     name: "Luxury SUV Mercedes Sprinter",
     char: "Max People: 14 || Max Luggage: 14",
-    description: "Spacious and sophisticated choice for a variety of group travels such as business meetings, parties, special events and airport trasfers.",
+    description:
+      "Spacious and sophisticated choice for a variety of group travels such as business meetings, parties, special events and airport trasfers.",
   },
 ];
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ContactForm = () => {
   return (
@@ -27,7 +27,7 @@ const ContactForm = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-1">
-        <div>
+          <div>
             <label className="sr-only">Subject</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
@@ -59,7 +59,7 @@ const ContactForm = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

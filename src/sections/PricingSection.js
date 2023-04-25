@@ -10,7 +10,8 @@ const PricingSection = () => {
               Best Limo Rates In Miami
             </h2>
             <p className="mt-6 text-lg leading-8 text-white">
-              Executive Limo Service provides the best limo rates in Miami, Florida. For only $74.99 you can enjoy the best service possible.
+              Executive Limo Service provides the best limo rates in Miami,
+              Florida. For only $74.99 you can enjoy the best service possible.
             </p>
           </div>
           <div className="bg-[#d9d7d7] mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
@@ -19,7 +20,9 @@ const PricingSection = () => {
                 Save time and money with us
               </h3>
               <p className="mt-6 text-md leading-7 text-black">
-                Executive Limo Service provides the best limo rates in Miami, Florida. For only $74.99 you can enjoy the best service possible.
+                Executive Limo Service provides the best limo rates in Miami,
+                Florida. For only $74.99 you can enjoy the best service
+                possible.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
                 <h4 className="flex-none text-sm font-semibold leading-6 text-[#F7BE38]">

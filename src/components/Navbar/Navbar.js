@@ -1,61 +1,83 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
-import {CiMenuBurger} from 'react-icons/ci'
-import {AiOutlineClose} from 'react-icons/ai'
+import { CiMenuBurger } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
-  const [mobileMenu, setMobileMenu] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
     <div className="">
       <nav className="absolute top-0 lg:fixed flex justify-between items-center z-10 top-10 w-[85%] h-[70px] xl:h-[90px] left-[50%] translate-x-[-50%] px-[30px] bg-[#171717] rounded-2xl">
-        <div className="text-3xl lg:hidden text-gray-600 relative" onClick={() => setMobileMenu(!mobileMenu)}>
-            {mobileMenu ? <><AiOutlineClose /></> : <><CiMenuBurger /></>}
+        <div
+          className="text-3xl lg:hidden text-gray-600 relative"
+          onClick={() => setMobileMenu(!mobileMenu)}
+        >
+          {mobileMenu ? (
+            <>
+              <AiOutlineClose />
+            </>
+          ) : (
+            <>
+              <CiMenuBurger />
+            </>
+          )}
         </div>
-        {mobileMenu ?  <ul className="absolute lg:hidden bg-white top-[70px] text-lg flex flex-col gap-2 lg:gap-4 text-gray-900 p-6 rounded-b-lg">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link href="/book">Book</Link>
-          </li>
-          <li>
-            <Link href="/fleet">Fleet</Link>
-          </li>
-          <li>
-            <Link href="#" className="flex justify-start items-center w-full" onClick={() => {setOpen(!open)}}>
-              Services{" "}
-              <svg
-                className="w-4 h-4 ml-2"
-                aria-hidden="true"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+        {mobileMenu ? (
+          <ul className="absolute lg:hidden bg-white top-[70px] text-lg flex flex-col gap-2 lg:gap-4 text-gray-900 p-6 rounded-b-lg">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link href="/book">Book</Link>
+            </li>
+            <li>
+              <Link href="/fleet">Fleet</Link>
+            </li>
+            <li>
+              <Link
+                href="#"
+                className="flex justify-start items-center w-full"
+                onClick={() => {
+                  setOpen(!open);
+                }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </Link>
-            {open ? <ul className="relative bg-white text-black grid lg:hidden lg:grid-cols-2 xl:grid-cols-3 rounded-lg"><NavLinks /></ul> : null}
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-        </ul> : null}
-
+                Services{" "}
+                <svg
+                  className="w-4 h-4 ml-2"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </Link>
+              {open ? (
+                <ul className="relative bg-white text-black grid lg:hidden lg:grid-cols-2 xl:grid-cols-3 rounded-lg">
+                  <NavLinks />
+                </ul>
+              ) : null}
+            </li>
+            <li>
+              <Link href="/blog">Blog</Link>
+            </li>
+          </ul>
+        ) : null}
 
         <ul className="hidden lg:flex gap-10 text-gray-300">
           <li>
@@ -74,7 +96,13 @@ const Navbar = () => {
             <Link href="/fleet">Fleet</Link>
           </li>
           <li>
-            <Link href="#" className="flex justify-center items-center w-full" onClick={() => {setOpen(!open)}}>
+            <Link
+              href="#"
+              className="flex justify-center items-center w-full"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               Services{" "}
               <svg
                 className="w-4 h-4 ml-2"
@@ -92,7 +120,11 @@ const Navbar = () => {
                 ></path>
               </svg>
             </Link>
-            {open ? <ul className="absolute top-[90px] bg-gray-200 text-black hidden lg:grid lg:grid-cols-2 xl:grid-cols-3 rounded-lg"><NavLinks /></ul> : null}
+            {open ? (
+              <ul className="absolute top-[90px] bg-gray-200 text-black hidden lg:grid lg:grid-cols-2 xl:grid-cols-3 rounded-lg">
+                <NavLinks />
+              </ul>
+            ) : null}
           </li>
           <li>
             <Link href="/blog">Blog</Link>

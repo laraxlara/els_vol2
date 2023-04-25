@@ -11,7 +11,9 @@ const Main = () => {
             Limo service for any occassion
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-            Executive Limo Service is a luxury transportation service established in 2017. that offers an extensive fleet of vehicles to fulfill all your needs.
+            Executive Limo Service is a luxury transportation service
+            established in 2017. that offers an extensive fleet of vehicles to
+            fulfill all your needs.
           </p>
           <a
             href="#"

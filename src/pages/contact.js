@@ -29,10 +29,15 @@ const Contact = () => {
                     1000 Brickell Ave Ste 715 <br /> Miami, FL 33131, USA
                   </p>
                   <h5 className="text-xl font-semibold mb-2">Email:</h5>
-                  <a href="mailto:niko@executivelimoservice.net" className="text-xl">
+                  <a
+                    href="mailto:niko@executivelimoservice.net"
+                    className="text-xl"
+                  >
                     niko@executivelimoservice.net
                   </a>
-                  <h5 className="text-xl font-semibold mt-6 mb-2">Phone number:</h5>
+                  <h5 className="text-xl font-semibold mt-6 mb-2">
+                    Phone number:
+                  </h5>
                   <p className="mb-6">+1 305-570-2684</p>
                   <h5 className="text-xl font-semibold mb-4">Follow us:</h5>
                   <div className="flex flex-row">
@@ -73,11 +78,11 @@ const Contact = () => {
       </div>
 
       <div className="max-w-xl mx-auto mb-12">
-          <h1 className="max-w-2xl mb-4 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
-            Contact Us
-          </h1>
-          <ContactForm />
-        </div>
+        <h1 className="max-w-2xl mb-4 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
+          Contact Us
+        </h1>
+        <ContactForm />
+      </div>
     </Layout>
   );
 };

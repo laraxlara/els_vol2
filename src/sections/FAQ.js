@@ -10,9 +10,9 @@ const faq = [
   },
   {
     id: 2,
-    question: "2. How late can i cancel my reservation? What is cancelation policy?",
-    answer:
-      "It is possible to cancel 3 hours before for full refund.",
+    question:
+      "2. How late can i cancel my reservation? What is cancelation policy?",
+    answer: "It is possible to cancel 3 hours before for full refund.",
   },
   {
     id: 3,
@@ -22,15 +22,15 @@ const faq = [
   },
   {
     id: 4,
-    question: "4. What happens if my flight is delayed? Complimentary wait time?",
+    question:
+      "4. What happens if my flight is delayed? Complimentary wait time?",
     answer:
       "If your flight is delayed we will wait for you no matter what time you arrive! Also, once you have arrived we give up to 2 hours of waiting time for international flights and 1 hour for domestic flights.",
   },
   {
     id: 5,
     question: "5. Do you provide car seats?",
-    answer:
-      "Yes, we do provide car seats.",
+    answer: "Yes, we do provide car seats.",
   },
   {
     id: 6,
@@ -47,15 +47,14 @@ const faq = [
   {
     id: 8,
     question: "8. What does the limousine company's insurance policy cover?",
-    answer:
-      "All clients are fully insured up to $300.000.",
+    answer: "All clients are fully insured up to $300.000.",
   },
   {
     id: 9,
     question: "9. Are food and drinks provided?",
     answer:
       "Bottled water is included in the service price. Per special request we do provide drinks or food.",
-  }
+  },
 ];
 
 const FAQ = () => {

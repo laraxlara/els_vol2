@@ -17,9 +17,7 @@ const EventCard = ({ src, title, alt, text }) => {
         <a href="#">
           <h3 className="mt-0.5 text-xl">{title}</h3>
         </a>
-        <p className="mt-2 line-clamp-3 text-md text-gray-300">
-          {text}
-        </p>
+        <p className="mt-2 line-clamp-3 text-md text-gray-300">{text}</p>
         <a
           href="#"
           className="inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-black rounded-lg bg-[#F7BE38] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 mt-4"

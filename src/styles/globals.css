@@ -4,8 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Quattrocento&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@600&family=Orbitron:wght@400;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@600&family=Orbitron:wght@400;800&display=swap");
 
 @font-face {
   font-family: "DMSerif";
@@ -18,8 +17,8 @@
 }
 
 :root {
-  --font-lg: 'DM Serif Display', serif;
-  --font-sm: 'DM Sans', sans-serif;
+  --font-lg: "DM Serif Display", serif;
+  --font-sm: "DM Sans", sans-serif;
   --font-size-lg: 6rem;
   --font-size-md: 4rem;
   --font-size-sm: 3rem;
@@ -33,7 +32,12 @@
   font-family: var(--font-lg);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-lg);
 }
 

@@ -3,9 +3,11 @@ import BlogLayout from "@/layouts/blogLayout";
 import BlogCard from "@/components/BlogCard";
 
 const Blog = () => {
-  return <BlogLayout>
-    <BlogCard />
-  </BlogLayout>;
+  return (
+    <BlogLayout>
+      <BlogCard />
+    </BlogLayout>
+  );
 };
 
 export default Blog;

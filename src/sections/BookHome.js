@@ -9,7 +9,8 @@ const BookHome = () => {
           Book your ride now
         </h1>
         <p className="my-12 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 text-center">
-        Fill out this form and we will contact you soon afterward. Fields with * are required.
+          Fill out this form and we will contact you soon afterward. Fields with
+          * are required.
         </p>
         <BookingForm />
       </div>

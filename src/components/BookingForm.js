@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import fleet1 from '../../public/images/fleet1.jpg';
+import fleet1 from "../../public/images/fleet1.jpg";
 import fleet2 from "../../public/images/fleet2.jpg";
 import fleet3 from "../../public/images/fleet3.jpg";
 import fleet4 from "../../public/images/fleet4.jpg";
@@ -45,7 +45,10 @@ const BookingForm = () => {
 
           <div>
             <label className="sr-only">Select an option</label>
-            <select id="countries" className="w-full text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm">
+            <select
+              id="countries"
+              className="w-full text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm"
+            >
               <option selected>Number Of Passengers</option>
               <option>1</option>
               <option>2</option>
@@ -105,7 +108,7 @@ const BookingForm = () => {
             />
 
             <label className="block w-full flex justify-center items-center rounded-lg border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
-              <Image src={fleet3} alt="" height={150}  />
+              <Image src={fleet3} alt="" height={150} />
             </label>
           </div>
         </div>
