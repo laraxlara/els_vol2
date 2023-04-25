@@ -3,7 +3,6 @@ import Image from "next/image";
 import g1 from "../../public/images/g1.jpg";
 import g2 from "../../public/images/g2.jpg";
 import g3 from "../../public/images/g3.jpg";
-import g4 from "../../public/images/g4.JPG";
 
 const Gallery = () => {
   return (
@@ -39,7 +38,7 @@ const Gallery = () => {
       </div>
       <div className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
         <Image
-          src={g4}
+          src={g1}
           loading="lazy"
           alt="Photo by Lorenzo Herrera"
           className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
