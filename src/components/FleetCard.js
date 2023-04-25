@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { PropTypes } from "prop-types";
 
 const FleetCard = ({ src, alt, name, char, description }) => {
   return (
@@ -34,5 +35,13 @@ const FleetCard = ({ src, alt, name, char, description }) => {
     </div>
   );
 };
+
+FleetCard.propTypes = {
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  name: PropTypes.string,
+  char: PropTypes.string,
+  description: PropTypes.string
+}
 
 export default FleetCard;

@@ -49,7 +49,7 @@ const BookingForm = () => {
               id="countries"
               className="w-full text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm"
             >
-              <option selected>Number Of Passengers</option>
+              <option defaultValue={1}>Number Of Passengers</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>

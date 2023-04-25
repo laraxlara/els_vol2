@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import FAQ from "@/sections/FAQ";
 import Footer from "@/components/Footer";
+import { PropTypes } from "prop-types";
 
 const Layout = ({ children }) => {
   return (
@@ -16,5 +17,9 @@ const Layout = ({ children }) => {
     </div>
   );
 };
+
+Layout.propTypes = {
+  children: PropTypes.any
+}
 
 export default Layout;

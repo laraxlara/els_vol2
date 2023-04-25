@@ -1,4 +1,5 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 
 const QA = ({ question, answer }) => {
   return (
@@ -29,5 +30,10 @@ const QA = ({ question, answer }) => {
     </details>
   );
 };
+
+QA.propTypes = {
+  question: PropTypes.string,
+  answer: PropTypes.string
+}
 
 export default QA;

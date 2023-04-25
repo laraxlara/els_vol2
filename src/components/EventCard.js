@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { PropTypes } from "prop-types";
 
 const EventCard = ({ src, title, alt, text }) => {
   return (
@@ -28,5 +29,12 @@ const EventCard = ({ src, title, alt, text }) => {
     </article>
   );
 };
+
+EventCard.propTypes = {
+  src: PropTypes.object,
+  alt: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string
+}
 
 export default EventCard;

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer";
+import { PropTypes } from "prop-types";
 
 import services from "../../public/images/services.jpg";
 
@@ -95,5 +96,9 @@ const BlogLayout = ({ children }) => {
     </div>
   );
 };
+
+BlogLayout.propTypes = {
+  children: PropTypes.any
+}
 
 export default BlogLayout;
