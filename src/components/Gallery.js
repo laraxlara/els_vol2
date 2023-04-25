@@ -3,7 +3,7 @@ import Image from "next/image";
 import g1 from "../../public/images/g1.jpg";
 import g2 from "../../public/images/g2.jpg";
 import g3 from "../../public/images/g3.jpg";
-import g4 from "../../public/images/g4.jpg";
+import g4 from "../../public/images/g4.JPG";
 
 const Gallery = () => {
   return (
