@@ -10,13 +10,13 @@ const Hero = () => {
         <div className="flex justify-center items-center">
           <Image src={logo} alt="Logo" width={250} />
         </div>
-        <h1 className="mb-8 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-8 text-4xl font-extrabold text-white tracking-tight md:text-5xl lg:text-6xl">
           Miami`s Luxury Limousine Service
         </h1>
         <div className="flex flex-col mb-4 lg:mb-4 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
             href="#"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#F7BE38] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#F7BE38] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900"
           >
             Book now
             <svg

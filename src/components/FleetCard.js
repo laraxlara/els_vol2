@@ -41,7 +41,7 @@ FleetCard.propTypes = {
   alt: PropTypes.string,
   name: PropTypes.string,
   char: PropTypes.string,
-  description: PropTypes.string
-}
+  description: PropTypes.string,
+};
 
 export default FleetCard;

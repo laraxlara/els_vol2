@@ -5,7 +5,7 @@ const HeroForm = () => {
     <form className="bg-[#171717] px-6 py-4 rounded-2xl text-gray-100 mb-8 xl:my-2">
       <div className="px-4 mx-auto my-0 max-w-screen-xl text-center flex flex-col xl:flex-row justify-center">
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
             Pick Up Adress
           </label>
           <div className="relative">
@@ -27,14 +27,14 @@ const HeroForm = () => {
             <input
               type="text"
               id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-[#3b3b3b] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
               placeholder="Afdress example"
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
             Destination
           </label>
           <div className="relative">
@@ -56,21 +56,21 @@ const HeroForm = () => {
             <input
               type="text"
               id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-[#3b3b3b] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
               placeholder="name@flowbite.com"
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
             Date
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 aria-hidden="true"
-                className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                className="w-5 h-5 text-gray-500 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,21 +85,21 @@ const HeroForm = () => {
             <input
               type="text"
               id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-[#3b3b3b] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
               placeholder="Enter date"
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
             Your Email Adress
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 aria-hidden="true"
-                className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                className="w-5 h-5 text-gray-500 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,20 +111,20 @@ const HeroForm = () => {
             <input
               type="text"
               id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-[#3b3b3b] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
               placeholder="example@gmail.com"
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
             Passangers
           </label>
           <button
             id="dropdownDefaultButton"
             data-dropdown-toggle="dropdown"
-            className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-[#3b3b3b] dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 flex items-center"
+            className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center"
             type="button"
           >
             <svg
@@ -159,7 +159,7 @@ const HeroForm = () => {
 
         <button
           type="submit"
-          className="mt-9 mb-4 mx-2 inline-flex justify-center items-center py-2 px-4 text-base font-medium text-center text-black rounded-lg bg-[#F7BE38] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          className="mt-9 mb-4 mx-2 inline-flex justify-center items-center py-2 px-4 text-base font-medium text-center text-black rounded-lg bg-[#F7BE38] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900"
         >
           Submit
         </button>

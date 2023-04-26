@@ -175,7 +175,7 @@ const BookingForm = () => {
             type="submit"
             className="inline-block w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
           >
-            Send Enquiry
+            Send Request
           </button>
         </div>
       </form>

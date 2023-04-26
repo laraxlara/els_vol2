@@ -12,7 +12,9 @@ const book = () => {
             <span>luxury ride</span>
             <span className="block font-serif italic">now</span>
           </h1>
-          <BookingForm />
+          <div className="max-w-4xl mx-auto pb-12">
+            <BookingForm />
+          </div>
         </div>
       </section>
     </Layout>

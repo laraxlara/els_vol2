@@ -34,7 +34,7 @@ EventCard.propTypes = {
   src: PropTypes.object,
   alt: PropTypes.string,
   title: PropTypes.string,
-  text: PropTypes.string
-}
+  text: PropTypes.string,
+};
 
 export default EventCard;

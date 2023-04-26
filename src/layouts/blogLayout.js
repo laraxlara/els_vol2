@@ -98,7 +98,7 @@ const BlogLayout = ({ children }) => {
 };
 
 BlogLayout.propTypes = {
-  children: PropTypes.any
-}
+  children: PropTypes.any,
+};
 
 export default BlogLayout;

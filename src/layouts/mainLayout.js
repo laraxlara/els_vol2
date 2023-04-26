@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.any
-}
+  children: PropTypes.any,
+};
 
 export default Layout;

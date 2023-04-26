@@ -33,7 +33,7 @@ const QA = ({ question, answer }) => {
 
 QA.propTypes = {
   question: PropTypes.string,
-  answer: PropTypes.string
-}
+  answer: PropTypes.string,
+};
 
 export default QA;

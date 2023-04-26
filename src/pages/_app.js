@@ -8,5 +8,5 @@ export default function App({ Component, pageProps }) {
 
 App.propTypes = {
   Component: PropTypes.any,
-  pageProps: PropTypes.any
-}
+  pageProps: PropTypes.any,
+};

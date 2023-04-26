@@ -9,7 +9,7 @@ const PricingSection = () => {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Best Limo Rates In Miami
             </h2>
-            <p className="mt-6 text-lg leading-8 text-white">
+            <p className="mt-6 text-lg leading-8 text-gray-400">
               Executive Limo Service provides the best limo rates in Miami,
               Florida. For only $74.99 you can enjoy the best service possible.
             </p>
@@ -115,7 +115,7 @@ const PricingSection = () => {
                   </p>
                   <a
                     href="#"
-                    className="mt-10 block w-full rounded-md bg-[#F7BE38] px-3 py-4 text-center text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F7BE38]"
+                    className="mt-10 block w-full rounded-md bg-[#F7BE38] px-3 py-4 text-center text-sm font-semibold text-black shadow-sm hover:bg-[#F7BE38]/90"
                   >
                     BOOK NOW
                   </a>

@@ -13,8 +13,8 @@ module.exports = {
   plugins: ["react"],
   rules: {},
   settings: {
-    react: {
-      version: "detected",
+    next: {
+      rootDir: "packages/my-app/",
     },
   },
 };
