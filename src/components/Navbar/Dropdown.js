@@ -7,7 +7,7 @@ export const links = [
       {
         id: 1,
         name: "Conference Events",
-        link: "/",
+        link: "/services/conference-limo-service",
       },
     ],
   },
@@ -19,12 +19,12 @@ export const links = [
       {
         id: 1,
         name: "Wedding Limo Service",
-        link: "/",
+        link: "/services/wedding-limo-service",
       },
       {
         id: 2,
         name: "Prom Limo Service",
-        link: "/",
+        link: "/services/prom-limo-service",
       },
       {
         id: 3,
@@ -127,32 +127,32 @@ export const links = [
       {
         id: 1,
         name: "Birthday party limo service",
-        link: "/",
+        link: "/services/birthday-limo-service",
       },
       {
         id: 2,
         name: "Homecoming limo service",
-        link: "/",
+        link: "/services/homecoming-limo-service",
       },
       {
         id: 3,
         name: "Graduation day limo service",
-        link: "/",
+        link: "/services/graduation-limo-service",
       },
       {
         id: 4,
         name: "Bachelorette limo service",
-        link: "/",
+        link: "/services/bachelorette-limo-service",
       },
       {
         id: 5,
         name: "Bachelor limo service",
-        link: "/",
+        link: "/services/bachelor-limo-service",
       },
       {
         id: 6,
         name: "Quinceañera limo service",
-        link: "/",
+        link: "/services/quinceañera-limo-service",
       },
     ],
   },
