@@ -16,7 +16,7 @@ const AboutMain = () => {
             <span className="block font-serif italic">in Miami</span>
           </h1>
         </div>
-        <Image className="block w-full" src={services} alt="" />
+        <Image className="block w-full" src={services} alt="Executive SUV Chevy Suburban" />
         <p className="text-2xl text-gray-200 my-8">
           Executive Limo Service is a luxury transportation service established
           in 2017. that offers an extensive fleet of vehicles to fulfill all

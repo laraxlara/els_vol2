@@ -29,7 +29,7 @@ export const links = [
       {
         id: 3,
         name: "Proposal || Engagement Limo Service",
-        link: "/",
+        link: "/services/proposal-engagement-limo-service",
       },
     ],
   },
@@ -41,12 +41,12 @@ export const links = [
       {
         id: 1,
         name: "Airport Miami Car Service",
-        link: "/",
+        link: "/services/airport-miami-limo-service",
       },
       {
         id: 2,
         name: "Seaport Miami Car Service",
-        link: "/",
+        link: "/services/seaport-miami-limo-service",
       },
       {
         id: 3,
@@ -66,7 +66,7 @@ export const links = [
       {
         id: 6,
         name: "Fort Lauderdale Transfers",
-        link: "/",
+        link: "/services/fort-lauderdale-limo-service",
       },
     ],
   },
@@ -78,12 +78,12 @@ export const links = [
       {
         id: 1,
         name: "Out of city rides",
-        link: "/",
+        link: "/services/out-of-city-rides",
       },
       {
         id: 2,
         name: "Out of state rides",
-        link: "/",
+        link: "/services/out-of-state-rides",
       },
     ],
   },
@@ -95,27 +95,27 @@ export const links = [
       {
         id: 1,
         name: "Miami tours and events limo",
-        link: "/",
+        link: "/services/miami-tours-and-events-limo-service",
       },
       {
         id: 2,
         name: "Art Basel limo service",
-        link: "/",
+        link: "/services/art-basel-miami-limo-service",
       },
       {
         id: 3,
         name: "Winery tours limo service",
-        link: "/",
+        link: "/services/winery-tours-limo-service",
       },
       {
         id: 4,
         name: "Music festivals and night out limo",
-        link: "/",
+        link: "/services/music-festival-and-night-out-limo-service",
       },
       {
         id: 5,
         name: "Miami Sightseeing limo",
-        link: "/",
+        link: "/services/miami-sightseeing-limo-service",
       },
     ],
   },
@@ -137,7 +137,7 @@ export const links = [
       {
         id: 3,
         name: "Graduation day limo service",
-        link: "/services/graduation-limo-service",
+        link: "/services/graduation-day-limo-service",
       },
       {
         id: 4,
