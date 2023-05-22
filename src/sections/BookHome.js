@@ -3,7 +3,10 @@ import BookingForm from "@/components/BookingForm";
 
 const BookHome = () => {
   return (
-    <section className="bg-black bg-opacity-50 pt-[6rem] pb-[10rem] flex justify-center items-cenyter">
+    <section
+      id="booking-section"
+      className="bg-black xl:bg-opacity-50 pt-[6rem] pb-[10rem] flex justify-center items-cenyter"
+    >
       <div className="w-[95%] xl:w-[65%]">
         <h1 className="mb-8 m-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
           Book your ride now

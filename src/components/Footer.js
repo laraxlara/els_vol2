@@ -6,7 +6,7 @@ import logo from "../../public/images/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black bg-opacity-50 m-w-screen-xl">
+    <footer className="bg-black xl:bg-opacity-50 m-w-screen-xl">
       <div className="text-white relative z-1 flex flex-start items-center flex-col">
         <div className="footer-wrapper w-full flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start mt-12 px-6">
           <div className="footer-contact flex gap-8 text-[1.4rem] flex-col flex-1 text-center m-2">
@@ -27,16 +27,22 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/executivelimoservicemiami/"
                 className="m-2 text-[3rem] hover:text-gray-500"
+                target="blank"
               >
                 <BsInstagram />
               </a>
               <a
                 href="https://www.facebook.com/executivelimoservicellc/"
                 className="m-2 text-[3rem] hover:text-gray-500"
+                target="blank"
               >
                 <BsFacebook />
               </a>
-              <a href="/" className="m-2 text-[3rem] hover:text-gray-500">
+              <a
+                href="/"
+                className="m-2 text-[3rem] hover:text-gray-500"
+                target="blank"
+              >
                 <BsLinkedin />
               </a>
             </div>

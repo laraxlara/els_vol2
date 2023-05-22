@@ -55,7 +55,7 @@ video {
   position: fixed;
   top: 0;
   filter: brightness(0.45);
-  z-index: -999;
+  z-index: -1;
 }
 
 .main {
@@ -70,17 +70,16 @@ video {
 
 @media screen and (max-width: 1190px) {
   video {
-    display: none;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
   }
 
   .home-page-container {
-    background: white url("../../public/images/palms.jpg") no-repeat center
-      center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    height: 100%;
+  }
+  .hero-form-title {
+    font-size: 1rem;
   }
 }

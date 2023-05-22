@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import main from "../../public/images/main.png";
 
 const Main = () => {
   return (
-    <section className="bg-black bg-opacity-50">
+    <section className="bg-black xl:bg-opacity-50">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
@@ -15,8 +16,8 @@ const Main = () => {
             established in 2017. that offers an extensive fleet of vehicles to
             fulfill all your needs.
           </p>
-          <a
-            href="#"
+          <Link
+            href="/about"
             className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#F7BE38] hover:bg-[#F7BE38]/90"
           >
             Learn more
@@ -32,7 +33,7 @@ const Main = () => {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-4 h-[250px] lg:flex">
           <Image src={main} alt="Executive SUV Chevy Suburban" />

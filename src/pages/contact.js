@@ -5,16 +5,18 @@ import ContactForm from "@/components/ContactForm";
 const Contact = () => {
   return (
     <Layout>
-      <div className="container my-6 py-6 mx-auto px-4 md:px-6 lg:px-12 w-[95%]">
+      <div className="xl:my-6 py-6 mx-auto px-4 md:px-6 lg:px-12 bg-black xl:bg-transparent">
         <section className="mb-20 text-gray-800">
           <div className="flex flex-wrap justify-center">
             <div className="flex-initial shrink w-full xl:w-5/12 lg:w-6/12">
               <div className="lg:py-12 lg:pl-6 mb-6 lg:mb-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl"
-                  className="h-80 w-full border-0 rounded-lg shadow-lg"
-                  allowfullscreen=""
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.198708749281!2d-80.19435612438437!3d25.763999377350416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b683ea3e0f93%3A0x12cfdac73b945384!2s1000%20Brickell%20Ave%20%23715%2C%20Miami%2C%20FL%2033131%2C%20USA!5e0!3m2!1sen!2srs!4v1684172262329!5m2!1sen!2srs"
+                  width="800"
+                  height="600"
+                  allowFullscreen=""
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>
@@ -77,8 +79,8 @@ const Contact = () => {
         </section>
       </div>
 
-      <div className="max-w-xl mx-auto mb-12">
-        <h1 className="max-w-2xl mb-4 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
+      <div className="max-w-full xl:max-w-xl mx-auto xl:mb-12 bg-black xl:bg-transparent">
+        <h1 className="max-w-xl xl:mb-4 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
           Contact Us
         </h1>
         <ContactForm />

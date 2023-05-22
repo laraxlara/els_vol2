@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingSection = () => {
   return (
-    <section className="bg-black bg-opacity-50">
+    <section className="bg-black xl:bg-opacity-50">
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
@@ -25,7 +25,7 @@ const PricingSection = () => {
                 possible.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <h4 className="flex-none text-sm font-semibold leading-6 text-[#F7BE38]">
+                <h4 className="flex-none text-sm font-semibold text-xl leading-6 text-[#F7BE38]">
                   What’s included
                 </h4>
                 <div className="h-px flex-auto bg-gray-100"></div>

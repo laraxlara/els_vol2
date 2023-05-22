@@ -1,180 +1,180 @@
 {
-    "services": [
-        { 
-            "id": "1",
-            "slug": "wedding-limo-service",
-            "name": "Wedding Limo Service",
-            "description": "When you’re planning the wedding, you have a lot of things to think about like hiring the band, finding the right place, checking the right time, guest lists and many more. We can imagine the fuss that you’re going through. So many details not to forget about and still making sure that everything is going smoothly. That’s the reason why we are here. To make this experience of yours less stressful. Executive Limo Service Miami is offering you reliable, stylish and professional wedding service that you deserve. Our experienced drivers would make sure you get at your venue on time, fully prepared and relaxed. We are fully equipped to make this day the most special day of your life. Even if transportation is not the crucial factor of the special day of yours, it is still the thing that would make this day a lot less stressful for you. Get in touch with us and make sure you have your transportation needs fulfilled.",
-            "image1": "/images/wedding/w1.jpg",
-            "image2": "/images/wedding/w2.jpg"  
-        },
-        { 
-            "id": "2",
-            "slug": "prom-limo-service",
-            "name": "Prom Limo Service",
-            "description": "If you’re searching for the best way to make your prom experience more special, then you’re at the right place. We are aware that finishing one big part of your life is a bit stressful due to the fact that you want to have one memorable night. Executive Limo Service can provide the best service for making sure that you will be right on time for this special night of yours. The chauffeurs and staff at Executive Limo Service have one goal and that’s making both students and their parents satisfied. We strive to to lessen the worries of parents regarding their children's safety and being out on such a busy night. Since renting a limo in Miami can be challenging due to the cost of it, we want you to be aware that our service will outweigh the cost of it. Riding with one of the most checked and adult professional drivers at our company will improve the safety of students since our chauffeurs would also bear in mind drinking restrictions. Students would be taken care of with our service, be right on time for its big night and if arranged, taken home as soon as the night ends. We advise you to arrange your Prom Limo Service on time.",
-            "image1": "/images/prom/p1.jpg",
-            "image2": "/images/prom/p2.jpg" 
-        },
-        { 
-            "id": "3",
-            "slug": "conference-limo-service",
-            "name": "Conference Limo Service",
-            "description": "There is a conference or important business meeting coming up and you want to get there with style or maybe make sure every attendee gets there on time? Executive Limo Service offers the best corporate limousine service in Miami to account all needs. We will take care of everything and solemnly focus on safety, punctuality and experience. Why let meetings and conferences be delayed or managed improperly due to poorly organized transportation? Call us or send a request by filling out the form below the text and relax by letting us plan the optimal ride for you. We are capable of managing groups of all sizes. Everyone's experience is our top priority. Our drivers will take you on the right place ON-TIME. Our chauffeured, luxury fleet, professional drivers and affordable rates will take every meeting or conference on whole other level.",
-            "image1": "/images/conference/c1.PNG",
-            "image2": "/images/conference/c2.jpg" 
-        },
-        { 
-            "id": "4",
-            "slug": "airport-miami-limo-service",
-            "name": "Airport Miami Limo Service",
-            "description": "Miami airport (MIA) as well as Fort Lauderdale (FLL) are one of the busiest airports in the country. Avoid the crowd on airports and enjoy your comfortable ride with us without worrying about anything. We offer an incredible service with full attention on your experience. All you have to do is inform us about your pick up location and time of the arrival or departure. If your flight is delayed don’t worry we will track your flight and be there for you on time. Your chauffer will meet you with a sign at baggage claim when arranged and take care of all your luggage. Whether you are going somewhere or coming back to Miami the best limo and car service in the city is here for you - Executive Limo Service. No more unnecessary stress. All you have to do is make a call or fill out the form. Book on time so you don’t have to think about your transportation later.",
-            "image1": "/images/airport/a1.jpg",
-            "image2": "/images/airport/a2.jpg" 
-        },
-        { 
-            "id": "5",
-            "slug": "seaport-miami-limo-service",
-            "name": "Seaport Miami Limo Service",
-            "description": "You are going on a cruise and want to get to the port comfortably and on time? Avoid the traffic hussle and eliminate the stress by organizing your transportation in advance. Executive Limo Service offers the best fleet with professional drivers that will make sure your vacation starts stress free. Let us handle the planning of the ride. Call us or send a request by filling out the form below the text and we will help you find the fastest way to any port in Miami. Whether you are going to Port Miami, Port Everglades or Port Palm Beach, our licensed chauffeurs will accommodate all your needs, including helping you with your luggage. We offer transfers from Miami Airport (MIA) and Fort Lauderdale (FLL) to ports for very affordable price. Book your journey in advance. All you have to do is contact us. We are here for you 24/7.",
-            "image1": "/images/g1.jpg",
-            "image2": "/images/g1.jpg" 
-        },
-        { 
-            "id": "6",
-            "slug": "fort-lauderdale-limo-service",
-            "name": "Fort Lauderdale Aiport Miami Transfers",
-            "description": "Avoid the crowd on airports and enjoy your comfortable ride with us without worrying about anything. We offer an incredible service with full attention on your experience. If your flight is delayed don’t worry we will track your flight and be there for you. Your chauffer will meet you with a sign at baggage claim when arranged and take care of all your luggage. Whether you are going somewhere or coming back to Miami the best limo and car service in the city is here for you. No more unnecessary stress. All you have to do is make a call or fill out the form. Book on time so you don’t have to think about your transportation later. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for very affordable rates. Fresh, cold water is included in price.",
-            "image1": "/images/airport/a3.png",
-            "image2": "/images/airport/a5.png"
-        },
-        { 
-            "id": "7",
-            "slug": "birthday-limo-service",
-            "name": "Birthday Limo Service",
-            "description": "Make your birthday party unforgettable by arriving on scene in a luxurious and elegant limousine. Not every year have to be the same. Make a decision and choose to advance this special day this year. It is the right choice that would definitely impress your guests and you will be left with a beautiful memory for the rest of your life. Executive Limo Service will make your birthday party the most memorable. Call us and we will do all possible to customize this luxury ride specifically to your requirements. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
-            "image1": "/images/birthday/b1.jpg",
-            "image2": "/images/g1.jpg" 
-        },
-        { 
-            "id": "8",
-            "slug": "bachelorette-limo-service",
-            "name": "Bachelorette Limo Service",
-            "description": "Bride/Groom to be’s last night out should be celebrated in the best possible way. All details should be taken into account from decoration, location, guest list etc. Whether you are organizing a crazy night out or just a relaxing day in a spa, transportation is always number one thing to arrange properly so your friends can get there without any problems or unnecessary stress. For those who are looking to celebrate such a special occasion we offer the best possible service in Miami – Executive Limo Service. From the moment we pick you up your experience and comfort is our number one priority. All you have to do is to provide us with the information about your special night which includes time, date, pick up location and number of passengers. If you have any special request don’t hesitate to ask. We will do all possible to accommodate all your needs.",
-            "image1": "/images/special/bachelorette.png",
-            "image2": "/images/special/bachelorette1.png" 
-        },
-        { 
-            "id": "9",
-            "slug": "bachelor-limo-service",
-            "name": "Bachelor Limo Service",
-            "description": "Bride/Groom to be’s last night out should be celebrated in the best possible way. All details should be taken into account from decoration, location, guest list etc. Whether you are organizing a crazy night out or just a relaxing day in a spa, transportation is always number one thing to arrange properly so your friends can get there without any problems or unnecessary stress. For those who are looking to celebrate such a special occasion we offer the best possible service in Miami – Executive Limo Service. From the moment we pick you up your experience and comfort is our number one priority. All you have to do is to provide us with the information about your special night which includes time, date, pick up location and number of passengers. If you have any special request don’t hesitate to ask. We will do all possible to accommodate all your needs.",
-            "image1": "/images/bachelorette/bachelor.jpg",
-            "image2": "/images/service/s4.png"
-        },
-        { 
-            "id": "10",
-            "slug": "sweet-16-limo-service",
-            "name": "Sweet 16 Limo Service",
-            "description": "Organizing your daughters quinceañera or sweet 16 can be extremely stressful. Everything needs to be taken into account from decorations, dress, cake, guest list an many more. Throw your daughter the best party possible that she will remember forever and make sure she gets there in style. Book one of our luxurious limousines and make your daughter fairy tale come true. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
-            "image1": "/images/special/sweet.png",
-            "image2": "/images/special/birthday.png" 
-        },
-        { 
-            "id": "11",
-            "slug": "miami-tours-and-events-limo-service",
-            "name": "Miami Tours And Events Limo Service",
-            "description": "Miami is one of the most famous cities, not only in the USA, but in the whole world with popular beaches, enchanting nightlife, art festivals and outdoor food and wine extravaganzas, breathtaking shopping spots, shows and sport events. Consequently when visiting Miami people often find themselves overwhelmed with the beauty this city has to offer and usually get into dilemma how to see all with so many time at their hand. Surely there are websites where you can find organized trips and tours, but they are mostly focused on one location and ,not always, but in most cases overpriced. With that being said, it is definitely the best option to organize safe, air-conditioned and clean vehicle for you and your crew with licensed driver that will be there on your service and accommodate all your needs. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
-            "image1": "/images/special/event.png",
-            "image2": "/images/special/red.png" 
-        },
-        { 
-            "id": "12",
-            "slug": "art-basel-miami-limo-service",
-            "name": "Art Basel Miami Limo Service",
-            "description": "Art Basel is an international art fair staged annually on Miami Beach. It is also considered one of the most important art shows in the state. Needless to say during this beautiful exhibition many people come to see variety of art pieces displayed. Avoid the crowd by ensuring you have the best transportation possible. Executive Limo Service offers cars and limos suitable for this occasion. Enjoy this event with the comfort of one of our SUV’s or Sedan’s.",
-            "image1": "/images/service/s4.png",
-            "image2": "/images/special/art.png" 
-        },
-        { 
-            "id": "13",
-            "slug": "winery-tours-limo-service",
-            "name": "Winery Tours Limo Service Miami",
-            "description": "Wine tasting is quite popular in Miami and South Florida in general, since there are so many different choices out there and it would be a shame for you and your group to miss it. Aside from some of the best domestic wines, there is a great offer of wines from all around the world. Whether you are a passionate wine lover or just want to do something special on your vacation in Miami, wine tasting tour is just a phone call away. Your friends and you will be enjoying extraordinary wine tastes and breathtaking sights.",
-            "image1": "/images/service/s2.png",
-            "image2": "/images/service/s4.png"
-        },
-        { 
-            "id": "14",
-            "slug": "music-festival-and-night-out-limo-service",
-            "name": "Music Festival And Night Out Limo Service",
-            "description": "You are visiting Miami and want to spend a great time exploring nightlife it offers or maybe you are planning to go on some of the music festivals with your friends and want to make sure everyone is having fun? Miami is famous for its numerous concerts, music festivals and clubs, where the party is guaranteed. Only thing you need to find is transportation so that you and your friends can get there on time and in style. With that being said, it is definitely the best option to organize safe, air-conditioned and clean vehicle for you and your crew with licensed driver that will be there on your service and accommodate all your needs. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
-            "image1": "/images/birthday/b1.jpg",
-            "image2": "/images/special/no.png" 
-        },
-        { 
-            "id": "15",
-            "slug": "miami-sightseeing-limo-service",
-            "name": "Miami Sightseeing Limo Service",
-            "description": "Miami is one of the most famous cities, not only in the USA, but in the whole world with popular beaches, enchanting nightlife, art festivals and outdoor food and wine extravaganzas, breathtaking shopping spots, shows and sport events. Consequently when visiting Miami people often find themselves overwhelmed with the beauty this city has to offer and usually get into dilemma how to see all with so many time at their hand. Surely there are websites where you can find organized trips and tours, but they are mostly focused on one location and ,not always, but in most cases overpriced. If you are visiting Miami and want to ride around the town and see all the desired places or maybe do an extensive shopping while you are here renting a limo would make your life easier and this experience will lift on whole other level. With that being said, it is definitely the best option to organize safe, air-conditioned and clean vehicle for you and your crew with licensed driver that will be there on your service and accommodate all your needs. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
-            "image1": "/images/service/s1.png",
-            "image2": "/images/service/s3.png" 
-        },
-        { 
-            "id": "16",
-            "slug": "out-of-city-rides",
-            "name": "Out Of City Rides",
-            "description": "Looking for a safe ride to get you somewhere out of Miami? Executive Limo Service offers safe, affordable long distance limo and car service. Wherever you want to go we will get you from point A to point B without any distractions. You will enjoy the best possible service and get on desired location on time. Point to point service is set up in advance so you don’t have to worry about price changing. All you have to do is send a request by filling out the form below this text or just call us. Our customer service will listen to your requests and fully commit to customize your ride specifically to your requirements. We will do all possible to accommodate all your needs and special requests. If you want us to wait for you and take you back to point A or add one or more stops to your trip don’t hesitate to call. We will make sure to advice you on the most cost-effective option for your needs.",
-            "image1": "/images/service/s4.png",
-            "image2": "/images/service/s2.png" 
-        },
-        { 
-            "id": "17",
-            "slug": "out-of-state-rides",
-            "name": "Out Of State Rides",
-            "description": "Looking for a safe ride to get you somewhere out of Miami or maybe even out of Florida? Not a problem. Executive Limo Service offers safe, affordable long distance limo and car service. Wherever you want to go we will get you from point A to point B without any distractions. You will enjoy the best possible service and get on desired location on time. Point to point service is set up in advance so you don’t have to worry about price changing. All you have to do is send a request by filling out the form below this text or just call us. Our customer service will listen to your requests and fully commit to customize your ride specifically to your requirements. We will do all possible to accommodate all your needs and special requests. If you want us to wait for you and take you back to point A or add one or more stops to your trip don’t hesitate to call. We will make sure to advice you on the most cost-effective option for your needs.",
-            "image1": "/images/service/s4.png",
-            "image2": "/images/service/s2.png" 
-        },
-        { 
-            "id": "18",
-            "slug": "graduation-day-limo-service",
-            "name": "Graduation Day Limo Service",
-            "description": "Graduation day is a big part of our lives where we reflect our accomplishments and carry on with what is waiting for us next. It should be celebrated in the best possible manner. Whether you are choosing a transportation for yourself and your friends or making sure your child is ensured for this special occasion, Executive Limo Service can offer to help you with making the right choice. Our customer service will help you decide and fully organize your party. Make sure to get there in style and leave a stunning impression on your friends. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for very affordable rates. Fresh, cold water is included in price.",
-            "image1": "/images/bachelorette/party.jpg",
-            "image2": "/images/special/bachelorette.png" 
-        },
-        { 
-            "id": "19",
-            "slug": "homecoming-limo-service",
-            "name": "Homecoming Limo Service",
-            "description": "You are planning the night of your homecoming dance and thinking about how to make it unforgettable. We can offer you the best finishing touch that would turn this night into always wanted extravaganza that you and your friends will remember for the rest of your lives. Call your friends and organize luxurious ride with a chauffer who will take you just in front of the desired location. You don’t want to miss out this wonderful opportunity with reasonable price. Executive Limo Service offers an extensive fleet for this occasion. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you.",
-            "image1": "/images/birthday/b1.jpg",
-            "image2": "/images/special/no.png" 
-        },
-        { 
-            "id": "20",
-            "slug": "",
-            "name": "",
-            "description": "",
-            "image1": "/images/birthday/b1.jpg",
-            "image2": "/images/special/no.png" 
-        },
-        { 
-            "id": "21",
-            "slug": "",
-            "name": "",
-            "description": "",
-            "image1": "/images/birthday/b1.jpg",
-            "image2": "/images/special/no.png" 
-        },
-        { 
-            "id": "22",
-            "slug": "",
-            "name": "",
-            "description": "",
-            "image1": "/images/birthday/b1.jpg",
-            "image2": "/images/special/no.png" 
-        }
-    ]
+  "services": [
+    {
+      "id": "1",
+      "slug": "wedding-limo-service",
+      "name": "Wedding Limo Service",
+      "description": "When you’re planning the wedding, you have a lot of things to think about like hiring the band, finding the right place, checking the right time, guest lists and many more. We can imagine the fuss that you’re going through. So many details not to forget about and still making sure that everything is going smoothly. That’s the reason why we are here. To make this experience of yours less stressful. Executive Limo Service Miami is offering you reliable, stylish and professional wedding service that you deserve. Our experienced drivers would make sure you get at your venue on time, fully prepared and relaxed. We are fully equipped to make this day the most special day of your life. Even if transportation is not the crucial factor of the special day of yours, it is still the thing that would make this day a lot less stressful for you. Get in touch with us and make sure you have your transportation needs fulfilled.",
+      "image1": "/images/wedding/w1.jpg",
+      "image2": "/images/wedding/w2.jpg"
+    },
+    {
+      "id": "2",
+      "slug": "prom-limo-service",
+      "name": "Prom Limo Service",
+      "description": "If you’re searching for the best way to make your prom experience more special, then you’re at the right place. We are aware that finishing one big part of your life is a bit stressful due to the fact that you want to have one memorable night. Executive Limo Service can provide the best service for making sure that you will be right on time for this special night of yours. The chauffeurs and staff at Executive Limo Service have one goal and that’s making both students and their parents satisfied. We strive to to lessen the worries of parents regarding their children's safety and being out on such a busy night. Since renting a limo in Miami can be challenging due to the cost of it, we want you to be aware that our service will outweigh the cost of it. Riding with one of the most checked and adult professional drivers at our company will improve the safety of students since our chauffeurs would also bear in mind drinking restrictions. Students would be taken care of with our service, be right on time for its big night and if arranged, taken home as soon as the night ends. We advise you to arrange your Prom Limo Service on time.",
+      "image1": "/images/prom/p1.jpg",
+      "image2": "/images/prom/p2.jpg"
+    },
+    {
+      "id": "3",
+      "slug": "conference-limo-service",
+      "name": "Conference Limo Service",
+      "description": "There is a conference or important business meeting coming up and you want to get there with style or maybe make sure every attendee gets there on time? Executive Limo Service offers the best corporate limousine service in Miami to account all needs. We will take care of everything and solemnly focus on safety, punctuality and experience. Why let meetings and conferences be delayed or managed improperly due to poorly organized transportation? Call us or send a request by filling out the form below the text and relax by letting us plan the optimal ride for you. We are capable of managing groups of all sizes. Everyone's experience is our top priority. Our drivers will take you on the right place ON-TIME. Our chauffeured, luxury fleet, professional drivers and affordable rates will take every meeting or conference on whole other level.",
+      "image1": "/images/conference/c1.PNG",
+      "image2": "/images/conference/c2.jpg"
+    },
+    {
+      "id": "4",
+      "slug": "airport-miami-limo-service",
+      "name": "Airport Miami Limo Service",
+      "description": "Miami airport (MIA) as well as Fort Lauderdale (FLL) are one of the busiest airports in the country. Avoid the crowd on airports and enjoy your comfortable ride with us without worrying about anything. We offer an incredible service with full attention on your experience. All you have to do is inform us about your pick up location and time of the arrival or departure. If your flight is delayed don’t worry we will track your flight and be there for you on time. Your chauffer will meet you with a sign at baggage claim when arranged and take care of all your luggage. Whether you are going somewhere or coming back to Miami the best limo and car service in the city is here for you - Executive Limo Service. No more unnecessary stress. All you have to do is make a call or fill out the form. Book on time so you don’t have to think about your transportation later.",
+      "image1": "/images/airport/a1.jpg",
+      "image2": "/images/airport/a2.jpg"
+    },
+    {
+      "id": "5",
+      "slug": "seaport-miami-limo-service",
+      "name": "Seaport Miami Limo Service",
+      "description": "You are going on a cruise and want to get to the port comfortably and on time? Avoid the traffic hussle and eliminate the stress by organizing your transportation in advance. Executive Limo Service offers the best fleet with professional drivers that will make sure your vacation starts stress free. Let us handle the planning of the ride. Call us or send a request by filling out the form below the text and we will help you find the fastest way to any port in Miami. Whether you are going to Port Miami, Port Everglades or Port Palm Beach, our licensed chauffeurs will accommodate all your needs, including helping you with your luggage. We offer transfers from Miami Airport (MIA) and Fort Lauderdale (FLL) to ports for very affordable price. Book your journey in advance. All you have to do is contact us. We are here for you 24/7.",
+      "image1": "/images/service/s4.png",
+      "image2": "/images/service/s2.png"
+    },
+    {
+      "id": "6",
+      "slug": "fort-lauderdale-limo-service",
+      "name": "Fort Lauderdale Aiport Miami Transfers",
+      "description": "Avoid the crowd on airports and enjoy your comfortable ride with us without worrying about anything. We offer an incredible service with full attention on your experience. If your flight is delayed don’t worry we will track your flight and be there for you. Your chauffer will meet you with a sign at baggage claim when arranged and take care of all your luggage. Whether you are going somewhere or coming back to Miami the best limo and car service in the city is here for you. No more unnecessary stress. All you have to do is make a call or fill out the form. Book on time so you don’t have to think about your transportation later. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for very affordable rates. Fresh, cold water is included in price.",
+      "image1": "/images/airport/a3.png",
+      "image2": "/images/airport/a5.png"
+    },
+    {
+      "id": "7",
+      "slug": "birthday-limo-service",
+      "name": "Birthday Limo Service",
+      "description": "Make your birthday party unforgettable by arriving on scene in a luxurious and elegant limousine. Not every year have to be the same. Make a decision and choose to advance this special day this year. It is the right choice that would definitely impress your guests and you will be left with a beautiful memory for the rest of your life. Executive Limo Service will make your birthday party the most memorable. Call us and we will do all possible to customize this luxury ride specifically to your requirements. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
+      "image1": "/images/birthday/b1.jpg",
+      "image2": "/images/service/s4.png"
+    },
+    {
+      "id": "8",
+      "slug": "bachelorette-limo-service",
+      "name": "Bachelorette Limo Service",
+      "description": "Bride/Groom to be’s last night out should be celebrated in the best possible way. All details should be taken into account from decoration, location, guest list etc. Whether you are organizing a crazy night out or just a relaxing day in a spa, transportation is always number one thing to arrange properly so your friends can get there without any problems or unnecessary stress. For those who are looking to celebrate such a special occasion we offer the best possible service in Miami – Executive Limo Service. From the moment we pick you up your experience and comfort is our number one priority. All you have to do is to provide us with the information about your special night which includes time, date, pick up location and number of passengers. If you have any special request don’t hesitate to ask. We will do all possible to accommodate all your needs.",
+      "image1": "/images/special/bachelorette.png",
+      "image2": "/images/special/bachelorette1.png"
+    },
+    {
+      "id": "9",
+      "slug": "bachelor-limo-service",
+      "name": "Bachelor Limo Service",
+      "description": "Bride/Groom to be’s last night out should be celebrated in the best possible way. All details should be taken into account from decoration, location, guest list etc. Whether you are organizing a crazy night out or just a relaxing day in a spa, transportation is always number one thing to arrange properly so your friends can get there without any problems or unnecessary stress. For those who are looking to celebrate such a special occasion we offer the best possible service in Miami – Executive Limo Service. From the moment we pick you up your experience and comfort is our number one priority. All you have to do is to provide us with the information about your special night which includes time, date, pick up location and number of passengers. If you have any special request don’t hesitate to ask. We will do all possible to accommodate all your needs.",
+      "image1": "/images/bachelorette/bachelor.jpg",
+      "image2": "/images/service/s4.png"
+    },
+    {
+      "id": "10",
+      "slug": "sweet-16-limo-service",
+      "name": "Sweet 16 Limo Service",
+      "description": "Organizing your daughters quinceañera or sweet 16 can be extremely stressful. Everything needs to be taken into account from decorations, dress, cake, guest list an many more. Throw your daughter the best party possible that she will remember forever and make sure she gets there in style. Book one of our luxurious limousines and make your daughter fairy tale come true. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
+      "image1": "/images/special/sweet.png",
+      "image2": "/images/special/birthday.png"
+    },
+    {
+      "id": "11",
+      "slug": "miami-tours-and-events-limo-service",
+      "name": "Miami Tours And Events Limo Service",
+      "description": "Miami is one of the most famous cities, not only in the USA, but in the whole world with popular beaches, enchanting nightlife, art festivals and outdoor food and wine extravaganzas, breathtaking shopping spots, shows and sport events. Consequently when visiting Miami people often find themselves overwhelmed with the beauty this city has to offer and usually get into dilemma how to see all with so many time at their hand. Surely there are websites where you can find organized trips and tours, but they are mostly focused on one location and ,not always, but in most cases overpriced. With that being said, it is definitely the best option to organize safe, air-conditioned and clean vehicle for you and your crew with licensed driver that will be there on your service and accommodate all your needs. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
+      "image1": "/images/special/event.png",
+      "image2": "/images/special/red.png"
+    },
+    {
+      "id": "12",
+      "slug": "art-basel-miami-limo-service",
+      "name": "Art Basel Miami Limo Service",
+      "description": "Art Basel is an international art fair staged annually on Miami Beach. It is also considered one of the most important art shows in the state. Needless to say during this beautiful exhibition many people come to see variety of art pieces displayed. Avoid the crowd by ensuring you have the best transportation possible. Executive Limo Service offers cars and limos suitable for this occasion. Enjoy this event with the comfort of one of our SUV’s or Sedan’s.",
+      "image1": "/images/service/s4.png",
+      "image2": "/images/special/art.png"
+    },
+    {
+      "id": "13",
+      "slug": "winery-tours-limo-service",
+      "name": "Winery Tours Limo Service Miami",
+      "description": "Wine tasting is quite popular in Miami and South Florida in general, since there are so many different choices out there and it would be a shame for you and your group to miss it. Aside from some of the best domestic wines, there is a great offer of wines from all around the world. Whether you are a passionate wine lover or just want to do something special on your vacation in Miami, wine tasting tour is just a phone call away. Your friends and you will be enjoying extraordinary wine tastes and breathtaking sights.",
+      "image1": "/images/service/s2.png",
+      "image2": "/images/service/s4.png"
+    },
+    {
+      "id": "14",
+      "slug": "music-festival-and-night-out-limo-service",
+      "name": "Music Festival And Night Out Limo Service",
+      "description": "You are visiting Miami and want to spend a great time exploring nightlife it offers or maybe you are planning to go on some of the music festivals with your friends and want to make sure everyone is having fun? Miami is famous for its numerous concerts, music festivals and clubs, where the party is guaranteed. Only thing you need to find is transportation so that you and your friends can get there on time and in style. With that being said, it is definitely the best option to organize safe, air-conditioned and clean vehicle for you and your crew with licensed driver that will be there on your service and accommodate all your needs. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
+      "image1": "/images/birthday/b1.jpg",
+      "image2": "/images/special/no.png"
+    },
+    {
+      "id": "15",
+      "slug": "miami-sightseeing-limo-service",
+      "name": "Miami Sightseeing Limo Service",
+      "description": "Miami is one of the most famous cities, not only in the USA, but in the whole world with popular beaches, enchanting nightlife, art festivals and outdoor food and wine extravaganzas, breathtaking shopping spots, shows and sport events. Consequently when visiting Miami people often find themselves overwhelmed with the beauty this city has to offer and usually get into dilemma how to see all with so many time at their hand. Surely there are websites where you can find organized trips and tours, but they are mostly focused on one location and ,not always, but in most cases overpriced. If you are visiting Miami and want to ride around the town and see all the desired places or maybe do an extensive shopping while you are here renting a limo would make your life easier and this experience will lift on whole other level. With that being said, it is definitely the best option to organize safe, air-conditioned and clean vehicle for you and your crew with licensed driver that will be there on your service and accommodate all your needs. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
+      "image1": "/images/service/s1.png",
+      "image2": "/images/service/s3.png"
+    },
+    {
+      "id": "16",
+      "slug": "out-of-city-rides",
+      "name": "Out Of City Rides",
+      "description": "Looking for a safe ride to get you somewhere out of Miami? Executive Limo Service offers safe, affordable long distance limo and car service. Wherever you want to go we will get you from point A to point B without any distractions. You will enjoy the best possible service and get on desired location on time. Point to point service is set up in advance so you don’t have to worry about price changing. All you have to do is send a request by filling out the form below this text or just call us. Our customer service will listen to your requests and fully commit to customize your ride specifically to your requirements. We will do all possible to accommodate all your needs and special requests. If you want us to wait for you and take you back to point A or add one or more stops to your trip don’t hesitate to call. We will make sure to advice you on the most cost-effective option for your needs.",
+      "image1": "/images/service/s4.png",
+      "image2": "/images/service/s2.png"
+    },
+    {
+      "id": "17",
+      "slug": "out-of-state-rides",
+      "name": "Out Of State Rides",
+      "description": "Looking for a safe ride to get you somewhere out of Miami or maybe even out of Florida? Not a problem. Executive Limo Service offers safe, affordable long distance limo and car service. Wherever you want to go we will get you from point A to point B without any distractions. You will enjoy the best possible service and get on desired location on time. Point to point service is set up in advance so you don’t have to worry about price changing. All you have to do is send a request by filling out the form below this text or just call us. Our customer service will listen to your requests and fully commit to customize your ride specifically to your requirements. We will do all possible to accommodate all your needs and special requests. If you want us to wait for you and take you back to point A or add one or more stops to your trip don’t hesitate to call. We will make sure to advice you on the most cost-effective option for your needs.",
+      "image1": "/images/service/s4.png",
+      "image2": "/images/service/s2.png"
+    },
+    {
+      "id": "18",
+      "slug": "graduation-day-limo-service",
+      "name": "Graduation Day Limo Service",
+      "description": "Graduation day is a big part of our lives where we reflect our accomplishments and carry on with what is waiting for us next. It should be celebrated in the best possible manner. Whether you are choosing a transportation for yourself and your friends or making sure your child is ensured for this special occasion, Executive Limo Service can offer to help you with making the right choice. Our customer service will help you decide and fully organize your party. Make sure to get there in style and leave a stunning impression on your friends. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for very affordable rates. Fresh, cold water is included in price.",
+      "image1": "/images/bachelorette/party.jpg",
+      "image2": "/images/special/bachelorette.png"
+    },
+    {
+      "id": "19",
+      "slug": "homecoming-limo-service",
+      "name": "Homecoming Limo Service",
+      "description": "You are planning the night of your homecoming dance and thinking about how to make it unforgettable. We can offer you the best finishing touch that would turn this night into always wanted extravaganza that you and your friends will remember for the rest of your lives. Call your friends and organize luxurious ride with a chauffer who will take you just in front of the desired location. You don’t want to miss out this wonderful opportunity with reasonable price. Executive Limo Service offers an extensive fleet for this occasion. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you.",
+      "image1": "/images/birthday/b1.jpg",
+      "image2": "/images/special/no.png"
+    },
+    {
+      "id": "20",
+      "slug": "mia-to-miami-beach",
+      "name": "MIA to Miami Beach",
+      "description": "",
+      "image1": "/images/airport/a2.jpg",
+      "image2": "/images/airport/a1.jpg"
+    },
+    {
+      "id": "21",
+      "slug": "mia-to-port-everglades",
+      "name": "MIA to Port Everglades",
+      "description": "",
+      "image1": "/images/airport/a1.jpg",
+      "image2": "/images/airport/a2.jpg"
+    },
+    {
+      "id": "22",
+      "slug": "mia-to-port-miami",
+      "name": "MIA to Port Miami",
+      "description": "",
+      "image1": "/images/airport/a1.jpg",
+      "image2": "/images/airport/a2.jpg"
+    }
+  ]
 }

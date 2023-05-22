@@ -59,7 +59,7 @@ const faq = [
 
 const FAQ = () => {
   return (
-    <section className="bg-black bg-opacity-50 text-white">
+    <section className="bg-black xl:bg-opacity-50 text-white">
       <h1 className="max-w-3xl text-center mx-auto my-0 py-12 mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
         Frequently asked questions
       </h1>

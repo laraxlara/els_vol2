@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroForm = () => {
   return (
-    <form className="bg-[#171717] px-6 py-4 rounded-2xl text-gray-100 mb-8 xl:my-2">
+    <form className="hero-form bg-[#171717] px-6 py-4 rounded-none xl:rounded-2xl text-gray-100 mb-0 xl:my-2">
       <div className="px-4 mx-auto my-0 max-w-screen-xl text-center flex flex-col xl:flex-row justify-center">
         <div className="px-2">
           <label className="block my-2 text-sm font-medium text-gray-900 text-white">
@@ -119,9 +119,31 @@ const HeroForm = () => {
 
         <div className="px-2">
           <label className="block my-2 text-sm font-medium text-gray-900 text-white">
-            Passangers
+            Number Of Passengers
           </label>
-          <button
+          <select className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center">
+            <option defaultValue={1}>Number Of Passengers</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+          </select>
+
+          {/* <button
             id="dropdownDefaultButton"
             data-dropdown-toggle="dropdown"
             className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center"
@@ -154,7 +176,7 @@ const HeroForm = () => {
                 d="M19 9l-7 7-7-7"
               ></path>
             </svg>
-          </button>
+          </button> */}
         </div>
 
         <button

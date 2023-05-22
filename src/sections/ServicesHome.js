@@ -55,7 +55,7 @@ const data = [
 
 const ServicesHome = () => {
   return (
-    <section className="bg-black bg-opacity-50 py-12 mx-auto px-4 md:px-12">
+    <section className="bg-black xl:bg-opacity-50 py-12 mx-auto px-4 md:px-12">
       <div className="-mx-1 lg:-mx-4">
         <div className="grid gap-4 sm:grid-cols-1 md:gap-6 lg:grid-cols-2 xl:grid-cols-3 xl:gap-8 ">
           {data.map((item) => {

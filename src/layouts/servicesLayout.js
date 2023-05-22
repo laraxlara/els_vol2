@@ -23,23 +23,30 @@ const ServicesLayout = ({ children }) => {
           </p>
         </div>
         <div className="w-full bg-white flex flex-col xl:flex-row rounded-2xl py-6 my-12 mx-auto">
-            <div className="w-full xl:w-[70%]">
-                {children}
-            </div>
+          <div className="w-full xl:w-[70%]">{children}</div>
           <div className="w-full xl:w-[30%] sticky top-0 p-6">
             <article className="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6 mb-4">
               <Link href="#">
                 <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                Why Is Limo Service Better Than Uber?
+                  Why Is Limo Service Better Than Uber?
                 </h3>
               </Link>
 
               <p className="mt-2 line-clamp-5 text-sm/relaxed text-gray-500">
-              You have to attend an important conference in Miami. You and your team have been preparing for a really long time and everything has to be perfect — from the presentation, speech, dress code, appearance… Everybody knows that first impressions are important and after all this, you are getting in front of the 5* hotel in a 12 years old green Toyota Corolla with your baggage, suitcase and the laptop bag in hands, maybe 10 minutes late because the internet connection was bad or the driver got lost. Dont get me wrong, I have a 2014 Honda in the garage, but some things just dont get along.
+                You have to attend an important conference in Miami. You and
+                your team have been preparing for a really long time and
+                everything has to be perfect — from the presentation, speech,
+                dress code, appearance… Everybody knows that first impressions
+                are important and after all this, you are getting in front of
+                the 5* hotel in a 12 years old green Toyota Corolla with your
+                baggage, suitcase and the laptop bag in hands, maybe 10 minutes
+                late because the internet connection was bad or the driver got
+                lost. Dont get me wrong, I have a 2014 Honda in the garage, but
+                some things just dont get along.
               </p>
 
               <Link
-                href="#"
+                href="/blog/why-is-limo-service-better-than-uber"
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-900"
               >
                 Read on our blog

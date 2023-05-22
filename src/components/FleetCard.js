@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { PropTypes } from "prop-types";
 
 const FleetCard = ({ src, alt, name, char, description }) => {
@@ -22,12 +23,12 @@ const FleetCard = ({ src, alt, name, char, description }) => {
             <p className="mb-8 text-2xl max-w-md text-gray-300">{char}</p>
             <p className="mb-8 text-xl max-w-md text-gray-300">{description}</p>
             <div className="mt-auto">
-              <a
-                href="#"
+              <Link
+                href="/book"
                 className="inline-block mb-4 rounded-lg bg-[#F7BE38] px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
               >
                 Book now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -51,17 +51,17 @@ export const links = [
       {
         id: 3,
         name: "MIA to Miami Beach",
-        link: "/",
+        link: "/services/mia-to-miami-beach",
       },
       {
         id: 4,
         name: "MIA to Port Miami",
-        link: "/",
+        link: "/services/mia-to-port-miami",
       },
       {
         id: 5,
         name: "MIA to Port Everglades",
-        link: "/",
+        link: "/services/mia-to-port-everglades",
       },
       {
         id: 6,

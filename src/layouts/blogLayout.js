@@ -27,24 +27,26 @@ const BlogLayout = ({ children }) => {
             <article className="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6 mb-4">
               <Link href="#">
                 <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Top limo service in Miami
                 </h3>
               </Link>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae dolores, possimus pariatur animi temporibus nesciunt
-                praesentium dolore sed nulla ipsum eveniet corporis quidem,
-                mollitia itaque minus soluta, voluptates neque explicabo tempora
-                nisi culpa eius atque dignissimos. Molestias explicabo corporis
-                voluptatem?
+                Executive Limo Service Miami offers different rides such as
+                airport transfer, corporate transportation service, wedding
+                service, private transportation and many more. In order for you
+                to have the safest experience, we are continuously monitoring
+                Federal and Local guidelines for any updates. With our simple
+                booking process you will be accommodated with desired vehicle
+                and professional driver as soon as possible. We offer
+                professional rides with reasonable prices.
               </p>
 
               <Link
                 href="#"
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-900"
               >
-                Find out more
+                Find out more about us
                 <span
                   aria-hidden="true"
                   className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
