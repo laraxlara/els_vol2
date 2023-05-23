@@ -5,7 +5,7 @@ const QA = ({ question, answer }) => {
   const [isShown, setIsShown] = useState(false);
   return (
     <details
-      className="group border-l-4 border-yellow-500 bg-[#212121] p-6"
+      className="group border-l-4 border-yellow-500 bg-[#212121] p-6 [&_summary::-webkit-details-marker]:hidden"
       open
     >
       <summary
