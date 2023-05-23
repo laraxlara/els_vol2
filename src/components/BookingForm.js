@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import fleet1 from "../../public/images/fleet1.jpg";
 import fleet2 from "../../public/images/fleet2.jpg";
@@ -7,17 +7,53 @@ import fleet4 from "../../public/images/fleet4.jpg";
 import fleet5 from "../../public/images/fleet5.jpg";
 
 const BookingForm = () => {
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    numOfPassangers: 0,
+    pickUpLocation: "",
+    dropOffLocation: "",
+    messages: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData((prev) => {
+      return { ...prev, [name]: value };
+    });
+    console.log(data);
+    setData({
+      name: "",
+      phone: "",
+      email: "",
+      numOfPassangers: 0,
+      pickUpLocation: "",
+      dropOffLocation: "",
+      messages: "",
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    console.log(Object.fromEntries(formData.entries()));
+  };
   return (
     <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-      <form action="" className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <label className="sr-only">Name</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Name"
+              name="name"
               type="text"
               id="email"
+              pattern="john"
+              onChange={handleChange}
+              required
             />
           </div>
 
@@ -26,8 +62,11 @@ const BookingForm = () => {
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Phone Number"
+              name="phone"
               type="tel"
               id="phone"
+              onChange={handleChange}
+              required
             />
           </div>
         </div>
@@ -38,16 +77,22 @@ const BookingForm = () => {
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Email address"
+              name="email"
               type="email"
               id="email"
+              onChange={handleChange}
+              required
             />
           </div>
 
           <div>
             <label className="sr-only">Select an option</label>
             <select
-              id="countries"
+              id="passengers"
+              name="numOfPassangers"
               className="w-full text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm"
+              onChange={handleChange}
+              required
             >
               <option defaultValue={1}>Number Of Passengers</option>
               <option>1</option>
@@ -146,7 +191,10 @@ const BookingForm = () => {
           <input
             className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
             placeholder="Pick Up Location"
+            name="pickUpLocation"
             type="text"
+            onChange={handleChange}
+            required
           />
         </div>
 
@@ -155,7 +203,10 @@ const BookingForm = () => {
           <input
             className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
             placeholder="Drop Off Location"
+            name="dropOfLocation"
             type="text"
+            onChange={handleChange}
+            required
           />
         </div>
 
@@ -165,8 +216,11 @@ const BookingForm = () => {
           <textarea
             className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
             placeholder="Message"
+            name="message"
             rows="8"
             id="message"
+            onChange={handleChange}
+            required
           ></textarea>
         </div>
 

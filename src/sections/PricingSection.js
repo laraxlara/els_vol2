@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const PricingSection = () => {
   return (
@@ -113,12 +114,12 @@ const PricingSection = () => {
                       / transfer
                     </span>
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    href="/book"
                     className="mt-10 block w-full rounded-md bg-[#F7BE38] px-3 py-4 text-center text-sm font-semibold text-black shadow-sm hover:bg-[#F7BE38]/90"
                   >
                     BOOK NOW
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

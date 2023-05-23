@@ -15,6 +15,7 @@ const data = [
     alt: "Airplane",
     title: "Airport || Seaport Transfer",
     text: "Avoid the crowd on airports and seaports and enjoy your comfortable ride with us. We will pick you up when arranged and take care of all your luggage from any airport or seaport in Miami.",
+    href: "/services/airport-miami-limo-service",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const data = [
     alt: "Businessman signing a contract",
     title: "Corporate Limo Service",
     text: "Experience professionalism and thrustworthiness on the highest possible level and be on your arranged business meeetings and events relaxed and on time.",
+    href: "/services/conference-limo-service",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const data = [
     alt: "Bride making a toast with bridesmades",
     title: "Special Occassion Limo Service",
     text: "Enjoy this special day with us. We offer outstanding and stylish limo service that will make this day the most memorable one during your lifetime.",
+    href: "/services/wedding-limo-service",
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ const data = [
     alt: "Inside of the party limousine",
     title: "Party Limo Service",
     text: "Make your Birthday or Bachelor/Bachelorette party whole with luxury limousine. Book on time and arrange everything for you and your friends.",
+    href: "/services/bachelorette-limo-service",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const data = [
     alt: "Pople exiting limousine to attend red carpet event",
     title: "Events & Tours Limo Service",
     text: "You are visiting Miami and want to see some beautiful places, want to visit an upcoming event or spend a luxuorious night in the city? Miami is a city with variety of events. Book your limo and visit any of them without any worries on your mind.",
+    href: "/services/miami-tours-and-events-limo-service",
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ const data = [
     alt: "Miami Buildings",
     title: "Long Distance Limo & Car Service",
     text: "Whether you want to visit Orlando or any other city nearby or maybe go out of the state line we will accomodate your needs. Plan your trip in advance with the best limo service.",
+    href: "/services/out-of-city-rides",
   },
 ];
 
@@ -66,6 +72,7 @@ const ServicesHome = () => {
                 alt={item.alt}
                 title={item.title}
                 text={item.text}
+                href={item.href}
               />
             );
           })}
