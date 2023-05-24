@@ -54,7 +54,7 @@
       "name": "Birthday Limo Service",
       "description": "Make your birthday party unforgettable by arriving on scene in a luxurious and elegant limousine. Not every year have to be the same. Make a decision and choose to advance this special day this year. It is the right choice that would definitely impress your guests and you will be left with a beautiful memory for the rest of your life. Executive Limo Service will make your birthday party the most memorable. Call us and we will do all possible to customize this luxury ride specifically to your requirements. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for this occasion for very affordable rates. Fresh, cold water is included in price. All you have to do is call us or send a request by filling a form below the text and we will organize your trip including all the locations you want to visit alone or with your friends. We are capable to manage large groups of people and focus on everyone’s experience.",
       "image1": "/images/birthday/b1.jpg",
-      "image2": "/images/service/s4.png"
+      "image2": "/images/bachelorette/party.jpg"
     },
     {
       "id": "8",
@@ -142,7 +142,7 @@
       "name": "Graduation Day Limo Service",
       "description": "Graduation day is a big part of our lives where we reflect our accomplishments and carry on with what is waiting for us next. It should be celebrated in the best possible manner. Whether you are choosing a transportation for yourself and your friends or making sure your child is ensured for this special occasion, Executive Limo Service can offer to help you with making the right choice. Our customer service will help you decide and fully organize your party. Make sure to get there in style and leave a stunning impression on your friends. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you. Executive Limo Service offers an extensive fleet for very affordable rates. Fresh, cold water is included in price.",
       "image1": "/images/bachelorette/party.jpg",
-      "image2": "/images/special/bachelorette.png"
+      "image2": "/images/prom/p1.jpg"
     },
     {
       "id": "19",
@@ -150,31 +150,47 @@
       "name": "Homecoming Limo Service",
       "description": "You are planning the night of your homecoming dance and thinking about how to make it unforgettable. We can offer you the best finishing touch that would turn this night into always wanted extravaganza that you and your friends will remember for the rest of your lives. Call your friends and organize luxurious ride with a chauffer who will take you just in front of the desired location. You don’t want to miss out this wonderful opportunity with reasonable price. Executive Limo Service offers an extensive fleet for this occasion. Our vehicles deliver the highest degree of safety, dependability and comfort. All our drivers are well trained and licensed always on time and on your service ready to make this experience outstanding for you.",
       "image1": "/images/birthday/b1.jpg",
-      "image2": "/images/special/no.png"
+      "image2": "/images/prom/p1.jpg"
     },
     {
       "id": "20",
       "slug": "mia-to-miami-beach",
       "name": "MIA to Miami Beach",
-      "description": "",
-      "image1": "/images/airport/a2.jpg",
+      "description": "Welcome to our exceptional limousine service, offering seamless transportation from Miami International Airport (MIA) to the sun-soaked paradise of Miami Beach. At Executive Limo Service, we understand the importance of providing a luxurious and stress-free journey for our esteemed clients.vAs you touch down at MIA, our professional chauffeur will be eagerly awaiting your arrival, ready to whisk you away to the vibrant and breathtaking Miami Beach. With a warm smile and a personalized sign bearing your name, our chauffeur will guide you to our meticulously maintained fleet of luxurious limousines. Step into the lap of luxury as you settle into our plush leather seats, basking in the refined ambiance created by soft mood lighting. Our vehicles are equipped with advanced amenities, ensuring a comfortable and unforgettable ride from the airport to the sandy shores of Miami Beach. Whether you are traveling solo, with a loved one, or as part of a group, we have the perfect limousine to cater to your needs.",
+      "image1": "/images/airport/a5.png",
       "image2": "/images/airport/a1.jpg"
     },
     {
       "id": "21",
       "slug": "mia-to-port-everglades",
       "name": "MIA to Port Everglades",
-      "description": "",
-      "image1": "/images/airport/a1.jpg",
+      "description": "Welcome to our esteemed limousine service, dedicated to providing an exceptional transportation experience from Miami International Airport (MIA) to Port Everglades. At Executive Limo Service, we understand the importance of a seamless and luxurious journey for our valued clients. Arriving at MIA and continuing your travels to Port Everglades can be an exciting and sometimes hectic experience. That's where our professional team steps in, ready to offer you a stress-free and comfortable transfer, ensuring you arrive at your destination with style and ease. As you disembark from your flight, our courteous chauffeur will be eagerly awaiting your arrival, holding a sign displaying your name. From this moment onward, you can relax and immerse yourself in the opulence of our meticulously maintained fleet of luxury limousines. Our vehicles are designed to provide the utmost comfort and sophistication, ensuring an unforgettable journey from the airport to the vibrant Port Everglades. Whether you are traveling alone, with a companion, or as part of a larger group, we have the perfect limousine to suit your needs. Sink into plush leather seats, savor the ambiance of soft mood lighting, and enjoy the advanced amenities at your disposal.",
+      "image1": "/images/airport/a5.png",
       "image2": "/images/airport/a2.jpg"
     },
     {
       "id": "22",
       "slug": "mia-to-port-miami",
       "name": "MIA to Port Miami",
-      "description": "",
-      "image1": "/images/airport/a1.jpg",
+      "description": "Premier limousine service for travelers seeking a seamless and luxurious journey from Miami International Airport (MIA) to Port Miami. At Executive Limo Service, we understand the importance of providing unparalleled comfort, reliability, and style for our esteemed clients. Arriving at MIA can be both exciting and overwhelming, especially when you have a cruise to catch from the renowned Port Miami. That's where our dedicated team comes in, ready to provide you with an exceptional transfer experience that exceeds your expectations. As you step off the plane, our professional chauffeur will be eagerly awaiting your arrival, armed with a warm smile and a sign bearing your name. From that moment forward, you can relax and indulge in the opulence of our meticulously maintained fleet of luxurious limousines. Our vehicles are designed to offer the utmost comfort and elegance, ensuring a truly unforgettable journey from the airport to the bustling Port Miami.",
+      "image1": "/images/airport/a5.png",
       "image2": "/images/airport/a2.jpg"
+    },
+    {
+      "id": "23",
+      "slug": "proposal-engagement-limo-service",
+      "name": "Peoposal || Engagement Limo Service",
+      "description": "Congratulations on embarking on this beautiful chapter of your life! At Executive Limo Service, we take immense pleasure in offering a tailored limousine service to make your proposal or engagement an unforgettable and magical experience. Planning a proposal or an engagement celebration can be both exhilarating and nerve-wracking, but rest assured, we are here to help you create cherished memories that will last a lifetime. Our dedicated team understands the importance of every detail and strives to provide a luxurious and romantic atmosphere for this special occasion. Picture this: A sleek, chauffeur-driven limousine awaits you and your beloved, adorned with elegant decorations to set the stage for your unforgettable moment. As you step into the luxurious interior, you'll be greeted by an ambiance of romance and intimacy, with soft lighting, plush seating, and all the amenities you desire to make this experience truly magical. Whether you have a specific plan in mind or would like our assistance in creating a unique and personalized proposal or engagement celebration, we are here to bring your vision to life. Our experienced chauffeurs will ensure a smooth and discreet journey, allowing you to focus on the joy and excitement of the moment.",
+      "image1": "/images/wedding/w2.jpg",
+      "image2": "/images/birthday/b1.jpg"
+    },
+    {
+      "id": "23",
+      "slug": "quinceañera-limo-service",
+      "name": "Quinceañera Limo Service",
+      "description": "Celebrate this momentous milestone in style with our exquisite limousine. At Executive Limo Service, we understand the significance of a quinceañera and the desire to create an unforgettable experience for the birthday girl and her loved ones. From the moment you step into our luxurious limousine, you'll be transported to a world of elegance and sophistication. Our fleet of meticulously maintained vehicles is designed to provide the utmost comfort and style, ensuring an unforgettable journey throughout the day's festivities. Whether you have planned a grand entrance, a picturesque photo shoot, or a joyous party with friends and family, our professional chauffeurs are dedicated to making your quinceañera a memorable and seamless event. They possess an impeccable knowledge of the local area, ensuring you arrive at each destination on time and in style. Inside our limousines, you and your guests will be surrounded by luxury. Relax in plush leather seating, enjoy the vibrant ambiance created by soft lighting, and take advantage of the advanced amenities at your fingertips. ",
+      "image1": "/images/prom/p2.jpg",
+      "image2": "/images/special/quin.jpg"
     }
   ]
 }

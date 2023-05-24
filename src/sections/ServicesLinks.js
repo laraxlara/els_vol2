@@ -36,7 +36,7 @@ const ServicesLinks = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/conference-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Conference events
@@ -55,7 +55,7 @@ const ServicesLinks = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/airport-miami-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Airport Miami Limo Service
@@ -64,16 +64,16 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/seaport-miami-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Airport Miami Limo Service
+                      Seaport Miami Limo Service
                     </Link>
                   </li>
 
                   <li>
                     <Link
-                      href="/mia-to-miami-beach"
+                      href="/services/mia-to-miami-beach"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       MIA to Miami Beach Transfers
@@ -81,7 +81,7 @@ const ServicesLinks = () => {
                   </li>
                   <li>
                     <Link
-                      href="/mia-to-port-everglades"
+                      href="/services/mia-to-port-everglades"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       MIA to Port Everglades Transfers
@@ -89,7 +89,7 @@ const ServicesLinks = () => {
                   </li>
                   <li>
                     <Link
-                      href="/mia-to-port-miami"
+                      href="/services/mia-to-port-miami"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       MIA to Port Miami Transfers
@@ -124,7 +124,7 @@ const ServicesLinks = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/wedding-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Wedding limo service
@@ -133,7 +133,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/prom-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Prom limo serivce
@@ -142,7 +142,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/proposal-engagement-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Proposal || Engagement limo service
@@ -161,16 +161,16 @@ const ServicesLinks = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/miami-tours-and-events-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
-                      Miami touyrs and events limo
+                      Miami tours and events limo
                     </Link>
                   </li>
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/art-basel-miami-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Art Basel limo service
@@ -179,7 +179,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/winery-tours-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Winery tours limo
@@ -188,7 +188,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/music-festival-and-night-out-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Music festival and night out limo
@@ -197,7 +197,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/miami-sightseeing-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Miami sightseeing limo service
@@ -216,7 +216,7 @@ const ServicesLinks = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/birthday-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Birthday limo service
@@ -225,7 +225,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/homecoming-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Homecoming limo service
@@ -234,7 +234,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/graduation-day-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Graduation day limo service
@@ -243,7 +243,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/sweet-16-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Sweet 16 limo service
@@ -252,7 +252,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/bachelorette-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Bachelorette limo service
@@ -261,7 +261,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/bachelor-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Bachelor limo service
@@ -270,7 +270,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/quinceañera-limo-service"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Quinceañera limo service
@@ -289,7 +289,7 @@ const ServicesLinks = () => {
                 <ul className="space-y-4 text-sm">
                   <li>
                     <Link
-                      href="#"
+                      href="/services/out-of-city-rides"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Out of city rides
@@ -298,7 +298,7 @@ const ServicesLinks = () => {
 
                   <li>
                     <Link
-                      href="#"
+                      href="/services/out-of-state-rides"
                       className="text-gray-700 transition hover:opacity-75"
                     >
                       Out of state rides

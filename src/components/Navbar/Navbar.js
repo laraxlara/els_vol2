@@ -122,7 +122,11 @@ const Navbar = () => {
             </Link>
             {open ? (
               <ul className="absolute top-[90px] bg-gray-200 text-black hidden lg:grid lg:grid-cols-2 xl:grid-cols-3 rounded-lg">
-                <NavLinks />
+                <NavLinks
+                  onClick={() => {
+                    setOpen(!open);
+                  }}
+                />
               </ul>
             ) : null}
           </li>

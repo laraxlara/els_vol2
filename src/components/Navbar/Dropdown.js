@@ -114,7 +114,7 @@ export const links = [
       },
       {
         id: 5,
-        name: "Miami Sightseeing limo",
+        name: "Miami sightseeing limo",
         link: "/services/miami-sightseeing-limo-service",
       },
     ],
