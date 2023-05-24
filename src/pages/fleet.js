@@ -63,9 +63,13 @@ const Fleet = () => {
             <span>Black Car Service</span>
             <span className="block font-serif italic">Miami</span>
           </h1>
+          <h2 className="flex flex-col gap-6 font-heading text-lg my-12 text-gray-200 text-center">
+            Executive Limo Service
+          </h2>
           <p className="my-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Here at Flowbite we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
+            Discover the epitome of personalized luxury travel with our
+            chauffeured black car service in Miami, where attention to detail
+            and unparalleled professionalism redefine your every ride.
           </p>
           {fleet.map((item) => {
             return (

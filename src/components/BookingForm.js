@@ -90,7 +90,7 @@ const BookingForm = () => {
             <select
               id="passengers"
               name="numOfPassangers"
-              className="w-full text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm"
+              className="w-full h-[45px] text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm"
               onChange={handleChange}
               required
             >

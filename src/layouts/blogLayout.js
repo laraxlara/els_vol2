@@ -17,15 +17,15 @@ const BlogLayout = ({ children }) => {
             Miami Limousine Service Blog
           </h1>
           <span className="block h-2 bg-[#F7BE38] bg-opacity-50 my-10 rounded-full"></span>
-          <p className="max-w-2xl mb-6 font-light text-gray-100 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-200">
+          <h2 className="max-w-2xl mb-6 font-light text-gray-100 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-200">
             Executive Limo Service
-          </p>
+          </h2>
         </div>
         <div className="w-full bg-white flex flex-col xl:flex-row rounded-2xl py-6 my-12 mx-auto">
           <div className="w-full xl:w-[70%]">{children}</div>
           <div className="w-full xl:w-[30%] sticky top-0 p-6">
             <article className="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6 mb-4">
-              <Link href="#">
+              <Link href="/about">
                 <h3 className="mt-0.5 text-lg font-medium text-gray-900">
                   Top limo service in Miami
                 </h3>

@@ -7,16 +7,20 @@ const AboutMain = () => {
     <div className="flex flex-wrap -mx-4">
       <div className="relative w-full lg:w-1/2 px-4 mb-12 lg:mb-0 lg:pr-24 xl:pr-40">
         <div className="max-w-md md:max-w-lg mx-auto lg:mr-0 mb-12 md:mb-20">
-          <span className="inline-block py-1 px-3 mb-4 text-sm font-semibold text-black bg-[#F7BE38] rounded-full">
+          <h2 className="inline-block py-1 px-3 mb-4 text-sm font-semibold text-black bg-[#F7BE38] rounded-full">
             About Executive Limo Service
-          </span>
+          </h2>
           <h1 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-200">
             <span className="block">Top</span>
             <span>limo service</span>
             <span className="block font-serif italic">in Miami</span>
           </h1>
         </div>
-        <Image className="block w-full" src={services} alt="Executive SUV Chevy Suburban" />
+        <Image
+          className="block w-full"
+          src={services}
+          alt="Executive SUV Chevy Suburban"
+        />
         <p className="text-2xl text-gray-200 my-8">
           Executive Limo Service is a luxury transportation service established
           in 2017. that offers an extensive fleet of vehicles to fulfill all
@@ -27,9 +31,9 @@ const AboutMain = () => {
       </div>
       <div className="w-full lg:w-1/2 px-4">
         <div className="max-w-md md:max-w-lg xl:max-w-2xl mx-auto lg:mx-0">
-          <p className="text-lg font-semibold text-gray-200 mb-8">
+          <h3 className="text-lg font-semibold text-gray-200 mb-8">
             Limo service Miami for any occassion at your service 24/7.
-          </p>
+          </h3>
           <p className="text-lg text-gray-300 mb-8">
             Executive Limo Service Miami offers different rides such as airport
             transfer, corporate transportation service, wedding service, private
@@ -50,10 +54,10 @@ const AboutMain = () => {
             seaport and vice versa we will provide you with hourly limousine
             service with the best transport rates in Miami, Florida.
           </p>
-          <h2 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-200">
+          <h3 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-200">
             <span className="block">Professional</span>
             <span>chauffeurs</span>
-          </h2>
+          </h3>
           <p className="text-lg text-gray-300 my-8">
             All our chauffeurs are highly trained and licensed professionals in
             charge of looking after all of your needs. They possess the

@@ -121,8 +121,8 @@ const HeroForm = () => {
           <label className="block my-2 text-sm font-medium text-gray-900 text-white">
             Number Of Passengers
           </label>
-          <select className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center">
-            <option defaultValue={1}>Number Of Passengers</option>
+          <select className="bg-gray-50 h-[40px] border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center">
+            <option defaultValue={1}>Passengers</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>

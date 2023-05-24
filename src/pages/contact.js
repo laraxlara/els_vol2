@@ -83,9 +83,12 @@ const Contact = () => {
       </div>
 
       <div className="max-w-full xl:max-w-xl mx-auto xl:mb-12 bg-black xl:bg-transparent">
-        <h1 className="max-w-xl xl:mb-4 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
+        <h1 className="max-w-xl xl:mb-2 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
           Contact Us
         </h1>
+        <h2 className="flex flex-col gap-6 font-heading text-lg mb-8 text-gray-200 text-center">
+          Executive Limo Service
+        </h2>
         <ContactForm />
       </div>
     </Layout>
