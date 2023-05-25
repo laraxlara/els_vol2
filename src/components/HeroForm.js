@@ -1,12 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 
 const HeroForm = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    numOfPassangers: 0,
+    pickUpLocation: "",
+    dropOffLocation: "",
+    messages: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData((prev) => {
+      return { ...prev, [name]: value };
+    });
+    console.log(data);
+    setData({
+      name: "",
+      phone: "",
+      email: "",
+      numOfPassangers: 0,
+      pickUpLocation: "",
+      dropOffLocation: "",
+      messages: "",
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    console.log(Object.fromEntries(formData.entries()));
+  };
   return (
-    <form className="hero-form bg-[#171717] px-6 py-4 rounded-none xl:rounded-2xl text-gray-100 mb-0 xl:my-2">
+    <form
+      onSubmit={handleSubmit}
+      className="hero-form bg-[#171717] px-6 py-4 rounded-none xl:rounded-2xl text-gray-100 mb-0 xl:my-2"
+    >
       <div className="px-4 mx-auto my-0 max-w-screen-xl text-center flex flex-col xl:flex-row justify-center">
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
-            Pick Up Adress
+          <label className="block my-2 text-sm font-medium text-gray-100 ">
+            Pick Up Location
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -26,16 +62,19 @@ const HeroForm = () => {
             </div>
             <input
               type="text"
-              id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
-              placeholder="Afdress example"
+              name="pickUpLocation"
+              id="pickUpLocation"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400  focus:ring-gray-500 focus:border-gray-500"
+              placeholder="Pick Up Location"
+              onChange={handleChange}
+              required
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
-            Destination
+          <label className="block my-2 text-sm font-medium text-gray-100 ">
+            Drop Off Location
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -55,20 +94,23 @@ const HeroForm = () => {
             </div>
             <input
               type="text"
-              id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
-              placeholder="Destination"
+              id="dropOffLocation"
+              name="dropOfLocation"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400  focus:ring-gray-500 focus:border-gray-500"
+              placeholder="Drop Off Location"
+              onChange={handleChange}
+              required
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
+          <label className="block my-2 text-sm font-medium text-gray-100 ">
             Date
           </label>
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg
+          <div className="relative text-black">
+            <div className="absolute inset-y-0 text-black left-0 flex items-center pl-3 pointer-events-none">
+              {/* <svg
                 aria-hidden="true"
                 className="w-5 h-5 text-gray-500 text-gray-400"
                 fill="currentColor"
@@ -80,19 +122,23 @@ const HeroForm = () => {
                   d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
                   clipRule="evenodd"
                 ></path>
-              </svg>
+              </svg> */}
             </div>
             <input
-              type="text"
-              id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
-              placeholder="Enter date"
+              type="date"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 focus:ring-gray-500 focus:border-gray-500"
+              name="date"
+              selected={startDate}
+              onChange={(date) => {
+                setStartDate(date), handleChange;
+              }}
+              required
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
+          <label className="block my-2 text-sm font-medium text-gray-100 ">
             Your Email Adress
           </label>
           <div className="relative">
@@ -109,19 +155,27 @@ const HeroForm = () => {
               </svg>
             </div>
             <input
-              type="text"
-              id="email-address-icon"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-white focus:ring-gray-500 focus:border-gray-500"
+              type="email"
+              id="email"
+              name="email"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400  focus:ring-gray-500 focus:border-gray-500"
               placeholder="example@gmail.com"
+              onChange={handleChange}
+              required
             />
           </div>
         </div>
 
         <div className="px-2">
-          <label className="block my-2 text-sm font-medium text-gray-900 text-white">
+          <label className="block my-2 text-sm font-medium text-gray-100 ">
             Number Of Passengers
           </label>
-          <select className="bg-gray-50 h-[40px] border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center">
+          <select
+            onChange={handleChange}
+            name="numOfPassengers"
+            className="bg-gray-50 h-[40px] border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center"
+            required
+          >
             <option defaultValue={1}>Passengers</option>
             <option>1</option>
             <option>2</option>
@@ -142,46 +196,11 @@ const HeroForm = () => {
             <option>17</option>
             <option>18</option>
           </select>
-
-          {/* <button
-            id="dropdownDefaultButton"
-            data-dropdown-toggle="dropdown"
-            className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center"
-            type="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              className="w-5 h-5 mr-6 bi bi-person-fill"
-              viewBox="0 0 16 16"
-            >
-              {" "}
-              <path
-                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-                fill="#bdbdbd"
-              ></path>{" "}
-            </svg>
-            <svg
-              className="w-4 h-4 ml-2 text-gray-400"
-              aria-hidden="true"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button> */}
         </div>
 
         <button
           type="submit"
-          className="mt-9 mb-4 mx-2 inline-flex justify-center items-center py-2 px-4 text-base font-medium text-center text-black rounded-lg bg-[#F7BE38] hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900"
+          className="mt-9 mb-4 mx-2 inline-flex justify-center items-center py-2 px-4 text-base font-medium text-center text-gray-900 rounded-lg bg-[#F7BE38] hover:bg-opacity-50"
         >
           Submit
         </button>

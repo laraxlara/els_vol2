@@ -59,7 +59,7 @@ const ServicesLayout = ({ children }) => {
               </Link>
             </article>
 
-            <article className="overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+            <article className="overflow-hidden rounded-lg border border-gray-100 shadow-sm hover:shadow-lg">
               <Image
                 alt="Executive SUV Chevy Suburban"
                 src={services}

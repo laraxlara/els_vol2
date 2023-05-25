@@ -26,7 +26,7 @@ const Navbar = () => {
           )}
         </div>
         {mobileMenu ? (
-          <ul className="absolute lg:hidden bg-white top-[70px] text-lg flex flex-col gap-2 lg:gap-4 text-gray-900 p-6 rounded-b-lg">
+          <ul className="absolute lg:hidden bg-white top-[70px] text-sm md:text-md font-serif flex flex-col gap-2 lg:gap-4 text-gray-900 p-6 rounded-b-lg">
             <li>
               <Link href="/">Home</Link>
             </li>

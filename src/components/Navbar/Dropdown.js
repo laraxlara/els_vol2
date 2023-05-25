@@ -77,12 +77,12 @@ export const links = [
     sublinks: [
       {
         id: 1,
-        name: "Out of city rides",
+        name: "Out Of City Rides",
         link: "/services/out-of-city-rides",
       },
       {
         id: 2,
-        name: "Out of state rides",
+        name: "Out Of State Rides",
         link: "/services/out-of-state-rides",
       },
     ],
@@ -94,27 +94,27 @@ export const links = [
     sublinks: [
       {
         id: 1,
-        name: "Miami tours and events limo",
+        name: "Miami Tours And Events Limo",
         link: "/services/miami-tours-and-events-limo-service",
       },
       {
         id: 2,
-        name: "Art Basel limo service",
+        name: "Art Basel Limo Service",
         link: "/services/art-basel-miami-limo-service",
       },
       {
         id: 3,
-        name: "Winery tours limo service",
+        name: "Winery Tours Limo Service",
         link: "/services/winery-tours-limo-service",
       },
       {
         id: 4,
-        name: "Music festivals and night out limo",
+        name: "Music Festivals And Night Out Limo",
         link: "/services/music-festival-and-night-out-limo-service",
       },
       {
         id: 5,
-        name: "Miami sightseeing limo",
+        name: "Miami Sightseeing Limo",
         link: "/services/miami-sightseeing-limo-service",
       },
     ],
@@ -126,32 +126,32 @@ export const links = [
     sublinks: [
       {
         id: 1,
-        name: "Birthday party limo service",
+        name: "Birthday Party Limo Service",
         link: "/services/birthday-limo-service",
       },
       {
         id: 2,
-        name: "Homecoming limo service",
+        name: "Homecoming Limo Service",
         link: "/services/homecoming-limo-service",
       },
       {
         id: 3,
-        name: "Graduation day limo service",
+        name: "Graduation Day Limo Service",
         link: "/services/graduation-day-limo-service",
       },
       {
         id: 4,
-        name: "Bachelorette limo service",
+        name: "Bachelorette Limo Service",
         link: "/services/bachelorette-limo-service",
       },
       {
         id: 5,
-        name: "Bachelor limo service",
+        name: "Bachelor Limo Service",
         link: "/services/bachelor-limo-service",
       },
       {
         id: 6,
-        name: "Quinceañera limo service",
+        name: "Quinceañera Limo Service",
         link: "/services/quinceañera-limo-service",
       },
     ],

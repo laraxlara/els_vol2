@@ -4,10 +4,7 @@ import { PropTypes } from "prop-types";
 const QA = ({ question, answer }) => {
   const [isShown, setIsShown] = useState(false);
   return (
-    <details
-      className="group border-l-4 border-yellow-500 bg-[#212121] p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
+    <details className="group border-l-4 border-yellow-500 bg-[#212121] p-6 [&_summary::-webkit-details-marker]:hidden">
       <summary
         className="flex items-center justify-between cursor-pointer"
         onClick={() => setIsShown(true)}

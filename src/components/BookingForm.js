@@ -7,6 +7,7 @@ import fleet4 from "../../public/images/fleet4.jpg";
 import fleet5 from "../../public/images/fleet5.jpg";
 
 const BookingForm = () => {
+  const [startDate, setStartDate] = useState(new Date());
   const [data, setData] = useState({
     name: "",
     phone: "",
@@ -120,10 +121,10 @@ const BookingForm = () => {
         <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
           <div>
             <input
-              className="peer sr-only"
-              id="option1"
-              type="radio"
-              name="option"
+              type="checkbox"
+              value=""
+              className="hidden peer"
+              required=""
             />
 
             <label className="block w-full flex justify-center items-center rounded-lg border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
@@ -132,12 +133,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <input
-              className="peer sr-only"
-              id="option2"
-              type="radio"
-              name="option"
-            />
+            <input type="checkbox" value="" className="hidden peer" required />
 
             <label className="block w-full flex justify-center items-center rounded-lg border border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
               <Image src={fleet2} alt="" height={150} />
@@ -145,12 +141,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <input
-              className="peer sr-only"
-              id="option3"
-              type="radio"
-              name="option"
-            />
+            <input type="checkbox" value="" className="hidden peer" required />
 
             <label className="block w-full flex justify-center items-center rounded-lg border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
               <Image src={fleet3} alt="" height={150} />
@@ -160,30 +151,32 @@ const BookingForm = () => {
 
         <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
           <div>
-            <input
-              className="peer sr-only"
-              id="option1"
-              type="radio"
-              name="option"
-            />
+            <input type="checkbox" value="" className="hidden peer" required />
 
-            <label className="block w-full flex justify-center items-center rounded-lg border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
+            <label className="block w-full flex justify-center items-center rounded-lg border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black">
               <Image src={fleet4} alt="" height={150} />
             </label>
           </div>
 
           <div>
-            <input
-              className="peer sr-only"
-              id="option2"
-              type="radio"
-              name="option"
-            />
+            <input type="checkbox" value="" className="hidden peer" required />
 
-            <label className="block w-full flex justify-center items-center rounded-lg border border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
+            <label className="block w-full flex justify-center items-center rounded-lg border border-2 border-gray-400 p-3 hover:border-black peer-checked:border-black">
               <Image src={fleet5} alt="" height={150} />
             </label>
           </div>
+        </div>
+
+        <div>
+          <label className="sr-only">Date</label>
+          <input
+            type="date"
+            className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
+            name="trip-start"
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+            required
+          />
         </div>
 
         <div>

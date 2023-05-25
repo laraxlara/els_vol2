@@ -5,6 +5,10 @@ import ContactForm from "@/components/ContactForm";
 const Contact = () => {
   return (
     <Layout>
+      <h2 className="flex flex-col gap-6 font-heading mb-24 text-4xl text-gray-200 text-center font-bold">
+        <span className="block">Executive</span>
+        <span className="block font-serif italic">Limo Service</span>
+      </h2>
       <div className="xl:my-6 py-6 mx-auto px-4 md:px-6 lg:px-12 bg-black xl:bg-transparent overflow-hidden">
         <section className="mb-20 text-gray-800">
           <div className="flex flex-wrap justify-center">
@@ -86,9 +90,6 @@ const Contact = () => {
         <h1 className="max-w-xl xl:mb-2 text-4xl py-10 font-extrabold text-white text-center md:text-5xl xl:text-6xl">
           Contact Us
         </h1>
-        <h2 className="flex flex-col gap-6 font-heading text-lg mb-8 text-gray-200 text-center">
-          Executive Limo Service
-        </h2>
         <ContactForm />
       </div>
     </Layout>
