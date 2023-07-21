@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="text-white relative z-1 flex flex-start items-center flex-col">
         <div className="footer-wrapper w-full flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start mt-12 px-6">
           <div className="footer-contact flex gap-8 text-[1.4rem] flex-col flex-1 text-center m-2">
-            <h4 className="font-400 uppercase text-[32px] mb-2 tracking-wider">
+            <h3 className="font-400 uppercase text-[32px] mb-2 tracking-wider">
               Contact Us
-            </h4>
+            </h3>
             <p>
               <span>1000 Brickell Ave Ste 715</span>
             </p>
@@ -27,6 +27,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/executivelimoservicemiami/"
                 className="m-2 text-[3rem] hover:text-gray-500"
+                aria-label="Instagram"
                 target="blank"
               >
                 <BsInstagram />
@@ -34,6 +35,7 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/executivelimoservicellc/"
                 className="m-2 text-[3rem] hover:text-gray-500"
+                aria-label="Facebook"
                 target="blank"
               >
                 <BsFacebook />
@@ -41,6 +43,7 @@ const Footer = () => {
               <a
                 href="/"
                 className="m-2 text-[3rem] hover:text-gray-500"
+                aria-label="LinkedIn"
                 target="blank"
               >
                 <BsLinkedin />

@@ -45,7 +45,7 @@ const BookingForm = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <label className="sr-only">Name</label>
+            <label className="text-gray-500 pl-2">Name</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Name"
@@ -59,7 +59,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="sr-only">Phone</label>
+            <label className="text-gray-500 pl-2">Phone</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Phone Number"
@@ -74,7 +74,7 @@ const BookingForm = () => {
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <label className="sr-only">Email</label>
+            <label className="text-gray-500 pl-2">Email</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Email address"
@@ -87,7 +87,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="sr-only">Select an option</label>
+            <label className="text-gray-500 pl-2">Number Of Passengers</label>
             <select
               id="passengers"
               name="numOfPassangers"
@@ -168,7 +168,7 @@ const BookingForm = () => {
         </div>
 
         <div>
-          <label className="sr-only">Date</label>
+          <label className="text-gray-500 pl-2">Date</label>
           <input
             type="date"
             className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
@@ -180,7 +180,7 @@ const BookingForm = () => {
         </div>
 
         <div>
-          <label className="sr-only">Pick Up Location</label>
+          <label className="text-gray-500 pl-2">Pick Up Location</label>
           <input
             className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
             placeholder="Pick Up Location"
@@ -192,7 +192,7 @@ const BookingForm = () => {
         </div>
 
         <div>
-          <label className="sr-only">Drop Off Location</label>
+          <label className="text-gray-500 pl-2">Drop Off Location</label>
           <input
             className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
             placeholder="Drop Off Location"
@@ -204,7 +204,7 @@ const BookingForm = () => {
         </div>
 
         <div>
-          <label className="sr-only">Message</label>
+          <label className="text-gray-500 pl-2">Message</label>
 
           <textarea
             className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"

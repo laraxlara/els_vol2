@@ -46,7 +46,11 @@ const Contact = () => {
                   <p className="mb-6">+1 305-570-2684</p>
                   <h5 className="text-xl font-semibold mb-4">Follow us:</h5>
                   <div className="flex flex-row">
-                    <a href="https://www.facebook.com/executivelimoservicellc/">
+                    <a
+                      href="https://www.facebook.com/executivelimoservicellc/"
+                      aria-label="Facebook"
+                      target="blank"
+                    >
                       <svg
                         aria-hidden="true"
                         focusable="false"
@@ -62,7 +66,11 @@ const Contact = () => {
                         ></path>
                       </svg>
                     </a>
-                    <a href="https://www.instagram.com/executivelimoservicemiami/">
+                    <a
+                      href="https://www.instagram.com/executivelimoservicemiami/"
+                      aria-label="Instagram"
+                      target="blank"
+                    >
                       <svg
                         aria-hidden="true"
                         focusable="false"

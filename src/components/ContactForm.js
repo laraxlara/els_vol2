@@ -27,7 +27,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <label className="sr-only">Name</label>
+            <label className="text-gray-500 pl-2">Name</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Name"
@@ -39,7 +39,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label className="sr-only">Email</label>
+            <label className="text-gray-500 pl-2">Email</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Email address"
@@ -53,7 +53,7 @@ const ContactForm = () => {
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-1">
           <div>
-            <label className="sr-only">Subject</label>
+            <label className="text-gray-500 pl-2">Subject</label>
             <input
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Email subject"
@@ -66,7 +66,7 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label className="sr-only">Message</label>
+          <label className="text-gray-500 pl-2">Message</label>
 
           <textarea
             className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
