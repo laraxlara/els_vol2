@@ -10,7 +10,7 @@ const PricingSection = () => {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Best Limo Rates In Miami
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-400">
+            <p className="mt-6 text-lg leading-8 text-gray-200">
               Experience luxury and sophistication with our premier chauffeured
               black car service in Miami, where every journey is a testament to
               impeccable style and comfort.
@@ -27,7 +27,7 @@ const PricingSection = () => {
                 possible.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <h4 className="flex-none text-sm font-semibold text-xl leading-6 text-[#F7BE38]">
+                <h4 className="flex-none text-sm font-semibold text-xl leading-6 text-black">
                   What’s included
                 </h4>
                 <div className="h-px flex-auto bg-gray-100"></div>
@@ -38,7 +38,7 @@ const PricingSection = () => {
               >
                 <li className="flex gap-x-3">
                   <svg
-                    className="h-6 w-5 flex-none text-[#F7BE38]"
+                    className="h-6 w-5 flex-none text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -54,7 +54,7 @@ const PricingSection = () => {
 
                 <li className="flex gap-x-3">
                   <svg
-                    className="h-6 w-5 flex-none text-[#F7BE38]"
+                    className="h-6 w-5 flex-none text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -70,7 +70,7 @@ const PricingSection = () => {
 
                 <li className="flex gap-x-3">
                   <svg
-                    className="h-6 w-5 flex-none text-[#F7BE38]"
+                    className="h-6 w-5 flex-none text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -86,7 +86,7 @@ const PricingSection = () => {
 
                 <li className="flex gap-x-3">
                   <svg
-                    className="h-6 w-5 flex-none text-[#F7BE38]"
+                    className="h-6 w-5 flex-none text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"

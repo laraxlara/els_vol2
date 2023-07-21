@@ -63,7 +63,7 @@ const HeroForm = () => {
             <input
               type="text"
               name="pickUpLocation"
-              id="pickUpLocation"
+              id="pickUpLocation-hero"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400  focus:ring-gray-500 focus:border-gray-500"
               placeholder="Pick Up Location"
               onChange={handleChange}
@@ -94,7 +94,7 @@ const HeroForm = () => {
             </div>
             <input
               type="text"
-              id="dropOffLocation"
+              id="dropOffLocation-hero"
               name="dropOfLocation"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400  focus:ring-gray-500 focus:border-gray-500"
               placeholder="Drop Off Location"
@@ -127,7 +127,7 @@ const HeroForm = () => {
             <input
               type="date"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 focus:ring-gray-500 focus:border-gray-500"
-              name="date"
+              name="date-hero"
               selected={startDate}
               onChange={(date) => {
                 setStartDate(date), handleChange;
@@ -156,7 +156,7 @@ const HeroForm = () => {
             </div>
             <input
               type="email"
-              id="email"
+              id="email-hero"
               name="email"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400  focus:ring-gray-500 focus:border-gray-500"
               placeholder="example@gmail.com"

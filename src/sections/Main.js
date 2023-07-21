@@ -11,14 +11,14 @@ const Main = () => {
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
             Limo service for any occassion
           </h1>
-          <p className="max-w-2xl mb-6 font-light text-gray-400 lg:mb-8 md:text-lg lg:text-xl text-gray-400">
+          <p className="max-w-2xl mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl text-gray-400">
             Executive Limo Service is a luxury transportation service
             established in 2017. that offers an extensive fleet of vehicles to
             fulfill all your needs.
           </p>
           <Link
             href="/about"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#F7BE38] hover:bg-[#F7BE38]/90"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-gray-900 font-medium text-center rounded-lg bg-[#F7BE38] hover:bg-[#F7BE38]/90"
           >
             Learn more
             <svg
