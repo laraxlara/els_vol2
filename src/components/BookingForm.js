@@ -211,7 +211,7 @@ const BookingForm = () => {
             placeholder="Message"
             name="message"
             rows="8"
-            id="message"
+            id="message-booking"
             onChange={handleChange}
             required
           ></textarea>

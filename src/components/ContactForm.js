@@ -32,7 +32,7 @@ const ContactForm = () => {
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Name"
               type="text"
-              name="name"
+              name="name-contact"
               id="name"
               onChange={handleChange}
             />
@@ -44,7 +44,7 @@ const ContactForm = () => {
               className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
               placeholder="Email address"
               type="email"
-              name="email"
+              name="email-contact"
               id="email"
               onChange={handleChange}
             />
@@ -59,7 +59,7 @@ const ContactForm = () => {
               placeholder="Email subject"
               type="text"
               name="subject"
-              id="subject"
+              id="subject-contact"
               onChange={handleChange}
             />
           </div>
@@ -72,7 +72,7 @@ const ContactForm = () => {
             className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
             placeholder="Message"
             rows="8"
-            id="message"
+            id="message-contact"
             name="message"
             onChange={handleChange}
           ></textarea>
