@@ -1,92 +1,141 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import fleet1 from "../../public/images/fleet1.jpg";
-import fleet2 from "../../public/images/fleet2.jpg";
-import fleet3 from "../../public/images/fleet3.jpg";
-import fleet4 from "../../public/images/fleet4.jpg";
-import fleet5 from "../../public/images/fleet5.jpg";
+import Loader from "./Loader";
+// import Image from "next/image";
+// import fleet1 from "../../public/images/fleet1.jpg";
+// import fleet2 from "../../public/images/fleet2.jpg";
+// import fleet3 from "../../public/images/fleet3.jpg";
+// import fleet4 from "../../public/images/fleet4.jpg";
+// import fleet5 from "../../public/images/fleet5.jpg";
 
 const BookingForm = () => {
   const [startDate, setStartDate] = useState(new Date());
-  const [data, setData] = useState({
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [values, setValues] = useState({
     name: "",
     phone: "",
     email: "",
-    numOfPassangers: 0,
+    date: "",
     pickUpLocation: "",
-    dropOffLocation: "",
-    messages: "",
+    dropOfLocation: "",
+    message: "",
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setData((prev) => {
-      return { ...prev, [name]: value };
+    setValues({
+      ...values,
+      [e.target.id]: e.target.value,
     });
-    console.log(data);
-    setData({
-      name: "",
-      phone: "",
-      email: "",
-      numOfPassangers: 0,
-      pickUpLocation: "",
-      dropOffLocation: "",
-      messages: "",
-    });
+    (date) => setStartDate(date);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    console.log(Object.fromEntries(formData.entries()));
+    console.log(values);
+    setValues(values);
+    setLoading(true);
+
+    if (
+      values.name &&
+      values.phone &&
+      values.email &&
+      values.date &&
+      values.message
+    ) {
+      try {
+        const res = await fetch(`api/contact/`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        if (res) {
+          setSent(true);
+          setLoading(false);
+        }
+        const { data } = await res.json();
+
+        if (data) {
+          return;
+        }
+      } catch (error) {
+        console.log(error);
+        setError(true);
+      }
+    }
   };
   return (
     <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div>
-            <label className="text-gray-500 pl-2">Name</label>
-            <input
-              className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-              placeholder="Name"
-              name="name"
-              type="text"
-              id="email"
-              pattern="john"
-              onChange={handleChange}
-              required
-            />
-          </div>
+      {error ? (
+        <p className="text-[red] text-md font-bold py-6">
+          Error: Something went wrong! Try again later!
+        </p>
+      ) : null}
 
-          <div>
-            <label className="text-gray-500 pl-2">Phone</label>
-            <input
-              className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-              placeholder="Phone Number"
-              name="phone"
-              type="tel"
-              id="phone"
-              onChange={handleChange}
-              required
-            />
-          </div>
+      {loading ? (
+        <>
+          <Loader />
+        </>
+      ) : sent && !error && !loading ? (
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-[green] text-5xl text-center font-bold py-6">
+            Your message has been sent!
+          </p>
+          <button type="submit">Send another message</button>
         </div>
+      ) : (
+        <>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label className="text-gray-500 pl-2">Name</label>
+                <input
+                  className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  placeholder="Name"
+                  name="name"
+                  value={values.name}
+                  type="text"
+                  id="name"
+                  pattern="john"
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div>
-            <label className="text-gray-500 pl-2">Email</label>
-            <input
-              className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-              placeholder="Email address"
-              name="email"
-              type="email"
-              id="email"
-              onChange={handleChange}
-              required
-            />
-          </div>
+              <div>
+                <label className="text-gray-500 pl-2">Phone</label>
+                <input
+                  className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  placeholder="Phone Number"
+                  name="phone"
+                  value={values.phone}
+                  type="text"
+                  id="phone"
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
 
-          <div>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label className="text-gray-500 pl-2">Email</label>
+                <input
+                  className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  placeholder="Email address"
+                  name="email"
+                  value={values.email}
+                  type="email"
+                  id="email"
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              {/* <div>
             <label className="text-gray-500 pl-2">Number Of Passengers</label>
             <select
               id="passengers"
@@ -115,10 +164,10 @@ const BookingForm = () => {
               <option>17</option>
               <option>18</option>
             </select>
-          </div>
-        </div>
+          </div> */}
+            </div>
 
-        <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+            {/* <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
           <div>
             <input
               type="checkbox"
@@ -165,67 +214,76 @@ const BookingForm = () => {
               <Image src={fleet5} alt="" height={150} />
             </label>
           </div>
-        </div>
+        </div> */}
 
-        <div>
-          <label className="text-gray-500 pl-2">Date</label>
-          <input
-            type="date"
-            className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
-            name="trip-start"
-            selected={startDate}
-            onChange={(date) => setStartDate(date)}
-            required
-          />
-        </div>
+            <div>
+              <label className="text-gray-500 pl-2">Date</label>
+              <input
+                type="date"
+                className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
+                name="trip-start"
+                value={values.date}
+                id="date"
+                selected={startDate}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <div>
-          <label className="text-gray-500 pl-2">Pick Up Location</label>
-          <input
-            className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
-            placeholder="Pick Up Location"
-            name="pickUpLocation"
-            type="text"
-            onChange={handleChange}
-            required
-          />
-        </div>
+            <div>
+              <label className="text-gray-500 pl-2">Pick Up Location</label>
+              <input
+                className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
+                placeholder="Pick Up Location"
+                name="pickUpLocation"
+                value={values.pickUpLocation}
+                id="pickUpLocation"
+                type="text"
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <div>
-          <label className="text-gray-500 pl-2">Drop Off Location</label>
-          <input
-            className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
-            placeholder="Drop Off Location"
-            name="dropOfLocation"
-            type="text"
-            onChange={handleChange}
-            required
-          />
-        </div>
+            <div>
+              <label className="text-gray-500 pl-2">Drop Off Location</label>
+              <input
+                className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
+                placeholder="Drop Off Location"
+                name="dropOfLocation"
+                value={values.dropOfLocation}
+                id="dropOfLocation"
+                type="text"
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <div>
-          <label className="text-gray-500 pl-2">Message</label>
+            <div>
+              <label className="text-gray-500 pl-2">Message</label>
 
-          <textarea
-            className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-            placeholder="Message"
-            name="message"
-            rows="8"
-            id="message-booking"
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
+              <textarea
+                className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                placeholder="Message"
+                name="message"
+                value={values.message}
+                rows="8"
+                id="message"
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
 
-        <div className="mt-4">
-          <button
-            type="submit"
-            className="inline-block w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
-          >
-            Send Request
-          </button>
-        </div>
-      </form>
+            <div className="mt-4">
+              <button
+                type="submit"
+                className="inline-block w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
+              >
+                Send Request
+              </button>
+            </div>
+          </form>
+        </>
+      )}
     </div>
   );
 };
