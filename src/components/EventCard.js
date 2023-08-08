@@ -6,7 +6,14 @@ import { PropTypes } from "prop-types";
 const EventCard = ({ src, title, alt, text, href }) => {
   return (
     <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-      <Image alt={alt} src={src} fill className="h-56 w-full object-cover" />
+      <Image
+        alt={alt}
+        src={src}
+        width={100}
+        height={100}
+        className="h-56 w-full object-cover"
+        unoptimized
+      />
       <div className="bg-[#232423] border-gray-600 text-white p-4 sm:p-6">
         <p className="block text-xs text-gray-300">Miami Limousine Service</p>
         <h3 className="mt-0.5 text-xl">{title}</h3>
