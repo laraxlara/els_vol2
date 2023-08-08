@@ -25,11 +25,9 @@ const BlogLayout = ({ children }) => {
           <div className="w-full xl:w-[70%]">{children}</div>
           <div className="w-full xl:w-[30%] sticky top-0 p-6">
             <article className="rounded-lg border border-gray-100 p-4 shadow-sm transition hover:shadow-lg sm:p-6 mb-4">
-              <Link href="/about">
-                <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                  Top limo service in Miami
-                </h3>
-              </Link>
+              <h3 className="mt-0.5 text-lg font-medium text-gray-900">
+                Top limo service in Miami
+              </h3>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                 Executive Limo Service Miami offers different rides such as
@@ -43,7 +41,7 @@ const BlogLayout = ({ children }) => {
               </p>
 
               <Link
-                href="#"
+                href="/about"
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-900"
               >
                 Find out more about us
@@ -64,11 +62,9 @@ const BlogLayout = ({ children }) => {
               />
 
               <div className="p-4 sm:p-6">
-                <Link href="#">
-                  <h3 className="text-lg font-medium text-gray-900">
-                    Luxury Fleet Miami
-                  </h3>
-                </Link>
+                <h3 className="text-lg font-medium text-gray-900">
+                  Luxury Fleet Miami
+                </h3>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                   Executive Limo Service is a luxury transportation service that

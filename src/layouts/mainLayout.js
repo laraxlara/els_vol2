@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className="home-page-container">
       <div className="h-[200px] py-[50px]">
-        <video autoPlay loop muted src={"/videos/video.mp4"} kind="captions" />
+        <video autoPlay loop muted src={"/videos/video.mp4"} />
       </div>
       <Navbar />
       <main className="relative z-1">{children}</main>

@@ -58,7 +58,7 @@ const HeroForm = () => {
     }
   };
   return (
-    <div className="hero-form bg-[#171717] px-6 py-4 rounded-none xl:rounded-2xl text-gray-100 mb-0 xl:my-2">
+    <div className="hero-form max-w-screen-xl w-full bg-[#171717] px-6 py-4 rounded-none xl:rounded-2xl text-gray-100 mb-0 xl:my-2">
       {error ? (
         <p className="text-[red] text-md font-bold py-6">
           Error: Something went wrong! Try again later!

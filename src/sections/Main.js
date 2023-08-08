@@ -36,7 +36,12 @@ const Main = () => {
           </Link>
         </div>
         <div className="hidden lg:mt-0 lg:col-span-4 h-[250px] lg:flex">
-          <Image src={main} alt="Executive SUV Chevy Suburban" />
+          <Image
+            src={main}
+            width={591}
+            height={324}
+            alt="Executive SUV Chevy Suburban"
+          />
         </div>
       </div>
     </section>
