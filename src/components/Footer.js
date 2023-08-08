@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="footer-icons flex my-12 justify-center items-center">
               <a
                 href="https://www.instagram.com/executivelimoservicemiami/"
-                className="m-2 text-[3rem] hover:text-gray-500"
+                className="m-2 text-[3rem] hover:text-gray-200"
                 aria-label="Instagram"
                 target="blank"
               >
@@ -34,7 +34,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.facebook.com/executivelimoservicellc/"
-                className="m-2 text-[3rem] hover:text-gray-500"
+                className="m-2 text-[3rem] hover:text-gray-200"
                 aria-label="Facebook"
                 target="blank"
               >
@@ -42,7 +42,7 @@ const Footer = () => {
               </a>
               <a
                 href="/"
-                className="m-2 text-[3rem] hover:text-gray-500"
+                className="m-2 text-[3rem] hover:text-gray-200"
                 aria-label="LinkedIn"
                 target="blank"
               >
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-links flex flex-col gap-4 flex-1 text-center m-6">
+          <div className="footer-links text-gray-200 flex flex-col gap-4 flex-1 text-center m-6">
             <h6 className="text-[32px] uppercase mb-2 tracking-wider">
               Quick Links
             </h6>
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center m-6 text-lg">
+        <div className="text-center text-gray-200 m-6 text-lg">
           <p>2022 Executive Limo Service. All Rights reserved.</p>
         </div>
       </div>
