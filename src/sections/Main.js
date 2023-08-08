@@ -8,9 +8,9 @@ const Main = () => {
     <section className="bg-black xl:bg-opacity-50">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
+          <h2 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
             Limo service for any occassion
-          </h1>
+          </h2>
           <p className="max-w-2xl mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl text-gray-400">
             Executive Limo Service is a luxury transportation service
             established in 2017. that offers an extensive fleet of vehicles to

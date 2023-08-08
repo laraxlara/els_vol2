@@ -7,9 +7,9 @@ const PricingSection = () => {
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Best Limo Rates In Miami
-            </h2>
+            </h3>
             <p className="mt-6 text-lg leading-8 text-gray-200">
               Experience luxury and sophistication with our premier chauffeured
               black car service in Miami, where every journey is a testament to
@@ -19,7 +19,7 @@ const PricingSection = () => {
           <div className="bg-[#d9d7d7] mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
             <div className="p-8 sm:p-10 lg:flex-auto">
               <h3 className="text-2xl font-bold tracking-tight text-black">
-                Save time and money with us
+                Book Your Dream Limo Today
               </h3>
               <p className="mt-6 text-md leading-7 text-black">
                 Executive Limo Service provides the best limo rates in Miami,
@@ -28,7 +28,7 @@ const PricingSection = () => {
               </p>
               <div className="mt-10 flex items-center gap-x-4">
                 <h4 className="flex-none text-sm font-semibold text-xl leading-6 text-black">
-                  What’s included
+                  Best service
                 </h4>
                 <div className="h-px flex-auto bg-gray-100"></div>
               </div>
@@ -49,7 +49,7 @@ const PricingSection = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Best service
+                  Luxury comfort
                 </li>
 
                 <li className="flex gap-x-3">
@@ -65,7 +65,7 @@ const PricingSection = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Comfortable ride
+                  Safe ride
                 </li>
 
                 <li className="flex gap-x-3">
@@ -97,7 +97,7 @@ const PricingSection = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  All types of services
+                  Professional drivers
                 </li>
               </ul>
             </div>

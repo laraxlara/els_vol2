@@ -32,8 +32,9 @@ const AboutMain = () => {
       <div className="w-full lg:w-1/2 px-4">
         <div className="max-w-md md:max-w-lg xl:max-w-2xl mx-auto lg:mx-0">
           <h3 className="text-lg font-semibold text-gray-200 mb-8">
-            Limo service Miami for any occassion at your service 24/7.
+            Limo service Miami at your service 24/7
           </h3>
+          <h3></h3>
           <p className="text-lg text-gray-300 mb-8">
             Executive Limo Service Miami offers different rides such as airport
             transfer, corporate transportation service, wedding service, private

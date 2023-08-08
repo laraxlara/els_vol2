@@ -1,92 +1,147 @@
 import React, { useState } from "react";
+import Loader from "./Loader";
 
 const ContactForm = () => {
-  const [data, setData] = useState({
-    name: "",
-    subject: "",
-    email: "",
-    message: "",
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [values, setValues] = useState({
+    nameContact: "",
+    emailContact: "",
+    subjectContact: "",
+    messageContact: "",
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setData((prev) => {
-      return { ...prev, [name]: value };
+    setValues({
+      ...values,
+      [e.target.id]: e.target.value,
     });
-    console.log(data);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    console.log(Object.fromEntries(formData.entries()));
+    console.log(values);
+    setValues(values);
+    setLoading(true);
+
+    if (
+      values.nameContact &&
+      values.emailContact &&
+      values.subjectContact &&
+      values.messageContact
+    ) {
+      try {
+        const res = await fetch(`api/contact/`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        if (res) {
+          setSent(true);
+          setLoading(false);
+        }
+        const { data } = await res.json();
+
+        if (data) {
+          return;
+        }
+      } catch (error) {
+        console.log(error);
+        setError(true);
+      }
+    }
   };
 
   return (
     <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12 px-[4rem] xl:px-8">
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div>
-            <label className="text-gray-500 pl-2">Name</label>
-            <input
-              className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-              placeholder="Name"
-              type="text"
-              name="name-contact"
-              id="name"
-              onChange={handleChange}
-            />
-          </div>
+      {error ? (
+        <p className="text-[red] text-md font-bold py-6">
+          Error: Something went wrong! Try again later!
+        </p>
+      ) : null}
 
-          <div>
-            <label className="text-gray-500 pl-2">Email</label>
-            <input
-              className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-              placeholder="Email address"
-              type="email"
-              name="email-contact"
-              id="email"
-              onChange={handleChange}
-            />
-          </div>
+      {loading ? (
+        <>
+          <Loader />
+        </>
+      ) : sent && !error && !loading ? (
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-[green] text-5xl text-center font-bold py-6">
+            Your message has been sent!
+          </p>
+          <button type="submit">Send another message</button>
         </div>
+      ) : (
+        <>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label className="text-gray-500 pl-2">Name</label>
+                <input
+                  className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  placeholder="Name"
+                  type="text"
+                  name="nameContact"
+                  id="nameContact"
+                  onChange={handleChange}
+                />
+              </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-1">
-          <div>
-            <label className="text-gray-500 pl-2">Subject</label>
-            <input
-              className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-              placeholder="Email subject"
-              type="text"
-              name="subject"
-              id="subject-contact"
-              onChange={handleChange}
-            />
-          </div>
-        </div>
+              <div>
+                <label className="text-gray-500 pl-2">Email</label>
+                <input
+                  className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  placeholder="Email address"
+                  type="email"
+                  name="emailContact"
+                  id="emailContact"
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
 
-        <div>
-          <label className="text-gray-500 pl-2">Message</label>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-1">
+              <div>
+                <label className="text-gray-500 pl-2">Subject</label>
+                <input
+                  className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  placeholder="Email subject"
+                  type="text"
+                  name="subjectContact"
+                  id="subjectContact"
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
 
-          <textarea
-            className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
-            placeholder="Message"
-            rows="8"
-            id="message-contact"
-            name="message"
-            onChange={handleChange}
-          ></textarea>
-        </div>
+            <div>
+              <label className="text-gray-500 pl-2">Message</label>
 
-        <div className="mt-4">
-          <button
-            type="submit"
-            className="inline-block w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
-          >
-            Send Message
-          </button>
-        </div>
-      </form>
+              <textarea
+                className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
+                placeholder="Message"
+                rows="8"
+                id="messageContact"
+                name="messageContact"
+                onChange={handleChange}
+              ></textarea>
+            </div>
+
+            <div className="mt-4">
+              <button
+                type="submit"
+                className="inline-block w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </>
+      )}
     </div>
   );
 };

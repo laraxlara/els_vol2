@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Layout from "@/layouts/mainLayout";
 import FleetCard from "@/components/FleetCard";
 
@@ -55,37 +56,47 @@ const fleet = [
 
 const Fleet = () => {
   return (
-    <Layout>
-      <section className="mt-[-200px] pt-[10rem] lg:pt-[15rem] bg-black xl:bg-opacity-50">
-        <div className="px-4 w-full md:w-[80%] mx-auto my-0">
-          <h1 className="flex flex-col gap-6 font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-200 text-center">
-            <span className="block">Chauffeured</span>
-            <span>Black Car Service</span>
-            <span className="block font-serif italic">Miami</span>
-          </h1>
-          <h2 className="flex flex-col gap-6 font-heading text-lg my-12 text-gray-200 text-center">
-            Executive Limo Service
-          </h2>
-          <p className="my-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Discover the epitome of personalized luxury travel with our
-            chauffeured black car service in Miami, where attention to detail
-            and unparalleled professionalism redefine your every ride.
-          </p>
-          {fleet.map((item) => {
-            return (
-              <FleetCard
-                key={item.id}
-                src={item.src}
-                alt={item.alt}
-                name={item.name}
-                char={item.char}
-                description={item.description}
-              />
-            );
-          })}
-        </div>
-      </section>
-    </Layout>
+    <>
+      <Head>
+        <title>Executive Limo Service</title>
+        <meta
+          name="description"
+          content="Executive Limo Service is a luxury transportation service established in 2017. that offers an extensive fleet of vehicles to fulfill all your needs. Our mission is to provide our clients the best possible experience with our comfortable and safe ride."
+          key="desc"
+        />
+      </Head>
+      <Layout>
+        <section className="mt-[-200px] pt-[10rem] lg:pt-[15rem] bg-black xl:bg-opacity-50">
+          <div className="px-4 w-full md:w-[80%] mx-auto my-0">
+            <h1 className="flex flex-col gap-6 font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-200 text-center">
+              <span className="block">Chauffeured</span>
+              <span>Black Car Service</span>
+              <span className="block font-serif italic">Miami</span>
+            </h1>
+            <h2 className="flex flex-col gap-6 font-heading text-lg my-12 text-gray-200 text-center">
+              Executive Limo Service
+            </h2>
+            <p className="my-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+              Discover the epitome of personalized luxury travel with our
+              chauffeured black car service in Miami, where attention to detail
+              and unparalleled professionalism redefine your every ride.
+            </p>
+            {fleet.map((item) => {
+              return (
+                <FleetCard
+                  key={item.id}
+                  src={item.src}
+                  alt={item.alt}
+                  name={item.name}
+                  char={item.char}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+        </section>
+      </Layout>
+    </>
   );
 };
 

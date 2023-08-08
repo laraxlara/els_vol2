@@ -16,9 +16,7 @@ const EventCard = ({ src, title, alt, text, href }) => {
       />
       <div className="bg-[#232423] border-gray-600 text-white p-4 sm:p-6">
         <p className="block text-xs text-gray-300">Miami Limousine Service</p>
-        <a href="#">
-          <h4 className="mt-0.5 text-xl">{title}</h4>
-        </a>
+        <h3 className="mt-0.5 text-xl">{title}</h3>
         <p className="mt-2 line-clamp-3 text-md text-gray-300">{text}</p>
         <Link
           href={href}

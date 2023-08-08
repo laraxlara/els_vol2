@@ -17,9 +17,9 @@ const FleetCard = ({ src, alt, name, char, description }) => {
             />
           </div>
           <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
-            <h2 className="mb-4 text-xl font-bold text-gray-100 md:text-2xl lg:text-4xl">
+            <h3 className="mb-4 text-xl font-bold text-gray-100 md:text-2xl lg:text-4xl">
               {name}
-            </h2>
+            </h3>
             <p className="mb-8 text-2xl max-w-md text-gray-300">{char}</p>
             <p className="mb-8 text-xl max-w-md text-gray-300">{description}</p>
             <div className="mt-auto">

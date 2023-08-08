@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="text-white relative z-1 flex flex-start items-center flex-col">
         <div className="footer-wrapper w-full flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start mt-12 px-6">
           <div className="footer-contact flex gap-8 text-[1.4rem] flex-col flex-1 text-center m-2">
-            <h3 className="font-400 uppercase text-[32px] mb-2 tracking-wider">
+            <h6 className="font-400 uppercase text-[32px] mb-2 tracking-wider">
               Contact Us
-            </h3>
+            </h6>
             <p>
               <span>1000 Brickell Ave Ste 715</span>
             </p>
@@ -52,9 +52,9 @@ const Footer = () => {
           </div>
 
           <div className="footer-links flex flex-col gap-4 flex-1 text-center m-6">
-            <h4 className="text-[32px] uppercase mb-2 tracking-wider">
+            <h6 className="text-[32px] uppercase mb-2 tracking-wider">
               Quick Links
-            </h4>
+            </h6>
             <Link href="/" className="hover:tracking-widest">
               HOME
             </Link>
