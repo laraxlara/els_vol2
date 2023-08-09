@@ -1,24 +1,26 @@
 import React, { useState } from "react";
 import Loader from "./Loader";
+import DatePicker from "react-date-picker";
 
 const HeroForm = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  // const [startDate, setStartDate] = useState(new Date());
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [values, setValues] = useState({
     emailHero: "",
-    dateHero: "",
+    date: "",
+    numOfPassengers: "",
     pickUpLocationHero: "",
     dropOfLocationHero: "",
   });
 
   const handleChange = (e) => {
+    const { id, value } = e.target;
     setValues({
       ...values,
-      [e.target.id]: e.target.value,
+      [id]: value,
     });
-    (dateHero) => setStartDate(dateHero);
   };
 
   const handleSubmit = async (e) => {
@@ -29,7 +31,8 @@ const HeroForm = () => {
 
     if (
       values.emailHero &&
-      values.dateHero &&
+      values.date &&
+      values.numOfPassengers &&
       values.pickUpLocationHero &&
       values.dropOfLocationHero
     ) {
@@ -152,28 +155,35 @@ const HeroForm = () => {
                 </label>
                 <div className="relative text-black">
                   <div className="absolute inset-y-0 text-black left-0 flex items-center pl-3 pointer-events-none">
-                    {/* <svg
-                aria-hidden="true"
-                className="w-5 h-5 text-gray-500 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                  clipRule="evenodd"
-                ></path>
-              </svg> */}
+                    <svg
+                      aria-hidden="true"
+                      className="w-5 h-5 text-gray-500 text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
                   </div>
-                  <input
-                    type="date"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 focus:ring-gray-500 focus:border-gray-500"
-                    name="dateHero"
-                    id="dateHero"
-                    value={values.dateHero}
-                    selected={startDate}
-                    onChange={handleChange}
+                  <DatePicker
+                    className="datepicker appearance-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 focus:ring-gray-500 focus:border-gray-500"
+                    id="date"
+                    calendarIcon={null}
+                    clearIcon={null}
+                    closeCalendar={false}
+                    placeholder="Date"
+                    value={values.date}
+                    calendarClassName="datepicker"
+                    selected={values.date ? new Date(values.date) : null}
+                    onChange={(date) =>
+                      handleChange({
+                        target: { id: "date", value: date.toISOString() },
+                      })
+                    }
                     required
                   />
                 </div>
@@ -209,13 +219,15 @@ const HeroForm = () => {
                 </div>
               </div>
 
-              {/* <div className="px-2">
+              <div className="px-2">
                 <label className="block my-2 text-sm font-medium text-gray-100 ">
                   Number Of Passengers
                 </label>
                 <select
                   onChange={handleChange}
                   name="numOfPassengers"
+                  value={values.numOfPassengers}
+                  id="numOfPassengers"
                   className="bg-gray-50 h-[40px] border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5  bg-[#3b3b3b] border-gray-600 placeholder-gray-400 text-gray-400 focus:ring-gray-500 focus:border-gray-500 flex items-center"
                   required
                 >
@@ -239,7 +251,7 @@ const HeroForm = () => {
                   <option>17</option>
                   <option>18</option>
                 </select>
-              </div> */}
+              </div>
 
               <button
                 type="submit"

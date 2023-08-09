@@ -4,12 +4,19 @@ import { transporter } from "../../config/nodemailer";
 const handler = async (req, res) => {
   const {
     name,
+    nameContact,
+    emailContact,
+    emailHero,
+    subjectContact,
     phone,
     email,
     date,
     pickUpLocation,
+    pickUpLocationHero,
     dropOffLocation,
+    dropOffLocationHero,
     messages,
+    messageContact,
   } = req.body;
   console.log(name);
 
@@ -48,8 +55,8 @@ const handler = async (req, res) => {
           </p>
           <div style="font-size: .8rem; margin: 0 30px">
           ${
-            name
-              ? `<p>Name: ${name}</p>`
+            name || nameContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Name:</span> ${name} ${nameContact}</p>`
               : "This is the CHECK AVAILABILITY form."
           }
           ${
@@ -57,17 +64,36 @@ const handler = async (req, res) => {
               ? `<p><span style="font-weight: bold; font-size: 1rem;">Phone Number:</span> ${phone}</p>`
               : ""
           }
-          ${email ? `<p>Email Adress: ${email}</p>` : ""}
-          ${date ? `<p>Date Of The Ride: ${date}</p>` : ""}
           ${
-            pickUpLocation
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation}</p>`
+            email || emailHero || emailContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Email Adress:</span> ${email} ${emailContact} ${emailHero}</p>`
               : ""
           }
           ${
-            dropOffLocation ? `<p>Drop Of Location: ${dropOffLocation}</p>` : ""
+            subjectContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Email Subject:</span> ${subjectContact}</p>`
+              : ""
           }
-          ${messages ? `<p>Message: ${messages}</p>` : ""}
+          ${
+            date
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Date Of The Ride:</span> ${date}</p>`
+              : ""
+          }
+          ${
+            pickUpLocation || pickUpLocationHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation} ${pickUpLocationHero}</p>`
+              : ""
+          }
+          ${
+            dropOffLocation || dropOffLocationHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Drop Of Location:</span> ${dropOffLocation} ${dropOffLocationHero}</p>`
+              : ""
+          }
+          ${
+            messages || messageContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Message:</span> ${messages} ${messageContact}</p>`
+              : ""
+          }
           </div>
         </div>
       </div>
