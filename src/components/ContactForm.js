@@ -90,7 +90,6 @@ const ContactForm = () => {
                   onChange={handleChange}
                 />
               </div>
-
               <div>
                 <label className="text-gray-500 pl-2">Email</label>
                 <input
