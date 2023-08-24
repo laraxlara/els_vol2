@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import BlogLayout from "@/layouts/blogLayout";
 import BlogCard from "@/components/BlogCard";
+import services from "../../public/images/service/s4.png";
 
 const Blog = () => {
   return (
@@ -15,7 +16,7 @@ const Blog = () => {
         />
       </Head>
       <BlogLayout>
-        <BlogCard />
+        <BlogCard src={services} alt="The man enjoying a limo ride" />
       </BlogLayout>
     </>
   );

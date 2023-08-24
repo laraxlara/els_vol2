@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Loader from "./Loader";
 import DatePicker from "react-date-picker";
+import PlacesAutocomplete from "./Places";
+
 // import Image from "next/image";
 // import fleet1 from "../../public/images/fleet1.jpg";
 // import fleet2 from "../../public/images/fleet2.jpg";
@@ -9,8 +11,10 @@ import DatePicker from "react-date-picker";
 // import fleet5 from "../../public/images/fleet5.jpg";
 
 const BookingForm = () => {
+  const formRef = useRef(null);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
+  const [shouldResetForm, setShouldResetForm] = useState(false);
   const [loading, setLoading] = useState(false);
   const [values, setValues] = useState({
     name: "",
@@ -18,8 +22,8 @@ const BookingForm = () => {
     email: "",
     numOfPassengers: "",
     date: "",
-    pickUpLocation: "",
-    dropOfLocation: "",
+    pickUpLocation: { lng: null, lat: null, name: null },
+    dropOfLocation: { lng: null, lat: null, name: null },
     message: "",
   });
 
@@ -42,6 +46,8 @@ const BookingForm = () => {
       values.phone &&
       values.email &&
       values.numOfPassengers &&
+      values.pickUpLocation &&
+      values.dropOfLocation &&
       values.date &&
       values.message
     ) {
@@ -57,6 +63,7 @@ const BookingForm = () => {
         if (res) {
           setSent(true);
           setLoading(false);
+          setShouldResetForm(true);
         }
         const { data } = await res.json();
 
@@ -69,6 +76,24 @@ const BookingForm = () => {
       }
     }
   };
+
+  const handleResetForm = () => {
+    setSent(false);
+    setError(false);
+    setLoading(false);
+    setValues({
+      name: "",
+      phone: "",
+      email: "",
+      numOfPassengers: "",
+      date: "",
+      pickUpLocation: { lng: null, lat: null, name: null },
+      dropOfLocation: { lng: null, lat: null, name: null },
+      message: "",
+    });
+    setShouldResetForm(false);
+  };
+
   return (
     <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
       {error ? (
@@ -88,16 +113,15 @@ const BookingForm = () => {
           </p>
           <button
             type="button"
-            onClick={() => {
-              window.location.reload(false);
-            }}
+            onClick={handleResetForm}
+            className="inline-block flex justify-center items-center gap-2 w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
           >
             Book another ride
           </button>
         </div>
       ) : (
         <>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <label className="text-gray-500 pl-2">Name</label>
@@ -237,7 +261,6 @@ const BookingForm = () => {
                 closeCalendar={false}
                 placeholder="Date"
                 value={values.date}
-                calendarClassName="datepicker"
                 selected={values.date ? new Date(values.date) : null}
                 onChange={(date) =>
                   handleChange({
@@ -250,7 +273,11 @@ const BookingForm = () => {
 
             <div>
               <label className="text-gray-500 pl-2">Pick Up Location</label>
-              <input
+              {/* <p>
+                Selected: {values.pickUpLocation.name}{" "}
+                {values.pickUpLocation.lat} {values.pickUpLocation.lng}
+              </p> */}
+              {/* <input
                 className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
                 placeholder="Pick Up Location"
                 name="pickUpLocation"
@@ -259,12 +286,36 @@ const BookingForm = () => {
                 type="text"
                 onChange={handleChange}
                 required
+              /> */}
+              <PlacesAutocomplete
+                onSelect={({ lat, lng, value }) => {
+                  setValues((oldValues) => ({
+                    ...oldValues,
+                    pickUpLocation: { lat, lng, name: value },
+                  }));
+                }}
+                id="pickUpLocation"
+                placeholder="Pick Up Location"
               />
             </div>
 
             <div>
               <label className="text-gray-500 pl-2">Drop Off Location</label>
-              <input
+              {/* <p>
+                Selected: {values.dropOfLocation.name}{" "}
+                {values.dropOfLocation.lat} {values.dropOfLocation.lng}
+              </p> */}
+              <PlacesAutocomplete
+                onSelect={({ lat, lng, value }) => {
+                  setValues((oldValues) => ({
+                    ...oldValues,
+                    dropOfLocation: { lat, lng, name: value },
+                  }));
+                }}
+                id="dropOfLocation"
+                placeholder="Drop Off Location"
+              />
+              {/* <input
                 className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
                 placeholder="Drop Off Location"
                 name="dropOfLocation"
@@ -273,7 +324,7 @@ const BookingForm = () => {
                 type="text"
                 onChange={handleChange}
                 required
-              />
+              /> */}
             </div>
 
             <div>

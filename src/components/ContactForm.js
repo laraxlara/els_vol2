@@ -5,6 +5,7 @@ const ContactForm = () => {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [shouldResetForm, setShouldResetForm] = useState(false);
   const [values, setValues] = useState({
     nameContact: "",
     emailContact: "",
@@ -43,6 +44,7 @@ const ContactForm = () => {
         if (res) {
           setSent(true);
           setLoading(false);
+          setShouldResetForm(true);
         }
         const { data } = await res.json();
 
@@ -54,6 +56,19 @@ const ContactForm = () => {
         setError(true);
       }
     }
+  };
+
+  const handleResetForm = () => {
+    setSent(false);
+    setError(false);
+    setLoading(false);
+    setValues({
+      nameContact: "",
+      emailContact: "",
+      subjectContact: "",
+      messageContact: "",
+    });
+    setShouldResetForm(false);
   };
 
   return (
@@ -73,7 +88,13 @@ const ContactForm = () => {
           <p className="text-[green] text-5xl text-center font-bold py-6">
             Your message has been sent!
           </p>
-          <button type="submit">Send another message</button>
+          <button
+            type="button"
+            onClick={handleResetForm}
+            className="inline-block flex justify-center items-center gap-2 w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
+          >
+            Send another message
+          </button>
         </div>
       ) : (
         <>

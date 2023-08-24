@@ -7,6 +7,7 @@ const HeroForm = () => {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [shouldResetForm, setShouldResetForm] = useState(false);
   const [values, setValues] = useState({
     emailHero: "",
     date: "",
@@ -48,6 +49,7 @@ const HeroForm = () => {
         if (res) {
           setSent(true);
           setLoading(false);
+          setShouldResetForm(true);
         }
         const { data } = await res.json();
 
@@ -60,6 +62,20 @@ const HeroForm = () => {
       }
     }
   };
+
+  const handleResetForm = () => {
+    setSent(false);
+    setError(false);
+    setLoading(false);
+    setValues({
+      nameContact: "",
+      emailContact: "",
+      subjectContact: "",
+      messageContact: "",
+    });
+    setShouldResetForm(false);
+  };
+
   return (
     <div className="hero-form max-w-screen-xl w-full bg-[#171717] px-6 py-4 rounded-none xl:rounded-2xl text-gray-100 mb-0 xl:my-2">
       {error ? (
@@ -74,10 +90,16 @@ const HeroForm = () => {
         </>
       ) : sent && !error && !loading ? (
         <div className="flex flex-col justify-center items-center">
-          <p className="text-[green] text-5xl text-center font-bold py-6">
+          <p className="text-gray-100 text-5xl text-center font-bold py-6">
             Your message has been sent!
           </p>
-          <button type="submit">Send another message</button>
+          <button
+            type="button"
+            onClick={handleResetForm}
+            className="inline-block flex justify-center items-center gap-2 w-full rounded-lg bg-[#F7BE38] px-5 py-3 font-medium text-gray-900 sm:w-auto"
+          >
+            Send another message
+          </button>
         </div>
       ) : (
         <>

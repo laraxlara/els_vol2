@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import data from "../data/data.json";
+import { PropTypes } from "prop-types";
 
-const BlogCard = () => {
+const BlogCard = ({ src, alt }) => {
   return (
     <>
       {data.blogs.map((blog) => {
@@ -20,9 +22,9 @@ const BlogCard = () => {
             </div>
 
             <div className="hidden sm:block sm:basis-56">
-              <img
-                alt="Guitar"
-                src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              <Image
+                alt={alt}
+                src={src}
                 className="aspect-square h-full w-full object-cover rounded-lg"
               />
             </div>
@@ -60,6 +62,11 @@ const BlogCard = () => {
       })}
     </>
   );
+};
+
+BlogCard.propTypes = {
+  src: PropTypes.object,
+  alt: PropTypes.string,
 };
 
 export default BlogCard;

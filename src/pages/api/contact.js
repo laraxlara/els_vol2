@@ -13,8 +13,8 @@ const handler = async (req, res) => {
     date,
     pickUpLocation,
     pickUpLocationHero,
-    dropOffLocation,
-    dropOffLocationHero,
+    dropOfLocation,
+    dropOfLocationHero,
     messages,
     messageContact,
   } = req.body;
@@ -81,12 +81,12 @@ const handler = async (req, res) => {
           }
           ${
             pickUpLocation || pickUpLocationHero
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation} ${pickUpLocationHero}</p>`
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation.name} ${pickUpLocationHero}</p>`
               : ""
           }
           ${
-            dropOffLocation || dropOffLocationHero
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Drop Of Location:</span> ${dropOffLocation} ${dropOffLocationHero}</p>`
+            dropOfLocation || dropOfLocationHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Drop Of Location:</span> ${dropOfLocation.name} ${dropOfLocationHero}</p>`
               : ""
           }
           ${
