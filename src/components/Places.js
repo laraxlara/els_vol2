@@ -40,7 +40,7 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
     if (onSelect) onSelect({ lat, lng, value: results[0].formatted_address });
   };
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBNED5xlWHoI5p49hvCUZseMeIEvfpO-t0",
+    googleMapsApiKey: process.env.GOOGLE_API_KEY,
     libraries: ["places"],
   });
 
