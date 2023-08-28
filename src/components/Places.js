@@ -24,7 +24,7 @@ const libraries = ["places"];
 
 const GoogleMapsScript = (
   <Script
-    src={`//maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API_KEY}&libraries=places`}
+    src={`//maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_API}&libraries=places`}
     strategy="beforeInteractive"
   />
 );
@@ -57,7 +57,7 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
     if (onSelect) onSelect({ lat, lng, value: results[0].formatted_address });
   };
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.GOOGLE_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API,
     libraries,
     onLoad: () => init(),
   });
