@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "dotenv -e .env.local next dev",
+    "build": "dotenv -e .env.production next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +16,7 @@
     "@react-google-maps/api": "^2.19.2",
     "autoprefixer": "10.4.14",
     "core-js": "^3.32.0",
+    "dotenv-cli": "^7.3.0",
     "eslint-config-next": "13.3.0",
     "flowbite-datepicker": "^1.2.2",
     "next": "13.3.0",
