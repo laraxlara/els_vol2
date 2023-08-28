@@ -99,7 +99,7 @@ const handler = async (req, res) => {
           }
           ${
             pickUpLocation
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation.name} \n ${pickUpLocation.lng} \n ${pickUpLocation.lat}</p>`
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation.name} \n ${pickUpLocation.lng} ${pickUpLocation.lat}</p>`
               : pickUpLocationHero
               ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocationHero.name} ${pickUpLocationHero.lng} ${pickUpLocationHero.lat}</p>`
               : ""
