@@ -21,11 +21,15 @@ import Loader from "./Loader";
 import "@reach/combobox/styles.css";
 
 const libraries = ["places"];
-const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
+
+const GoogleMapsScript = (
   <Script
-    src="//maps.googleapis.com/maps/api/js?key=AIzaSyBNED5xlWHoI5p49hvCUZseMeIEvfpO-t0ss&libraries=places"
+    src={`//maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API_KEY}&libraries=places`}
     strategy="beforeInteractive"
-  ></Script>;
+  />
+);
+
+const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
   const center = useMemo(() => ({ lat: 37.0902, lng: -95.7129 }), []);
   const [selected, setSelected] = useState(null);
   const { init } = usePlacesAutocomplete({
@@ -62,6 +66,7 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
 
   return (
     <>
+      {GoogleMapsScript}
       <Combobox onSelect={handleSelect}>
         <ComboboxInput
           value={value}
