@@ -8,9 +8,12 @@ const handler = async (req, res) => {
     emailContact,
     emailHero,
     subjectContact,
+    numOfPassengers,
+    numOfPassengersHero,
     phone,
     email,
     date,
+    dateHero,
     pickUpLocation,
     pickUpLocationHero,
     dropOfLocation,
@@ -55,9 +58,11 @@ const handler = async (req, res) => {
           </p>
           <div style="font-size: .8rem; margin: 0 30px">
           ${
-            name || nameContact
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Name:</span> ${name} ${nameContact}</p>`
-              : "This is the CHECK AVAILABILITY form."
+            name
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Name:</span> ${name}</p>`
+              : nameContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Name:</span> ${nameContact}</p>`
+              : ""
           }
           ${
             phone
@@ -65,8 +70,19 @@ const handler = async (req, res) => {
               : ""
           }
           ${
-            email || emailHero || emailContact
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Email Adress:</span> ${email} ${emailContact} ${emailHero}</p>`
+            numOfPassengers
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Phone Number:</span> ${numOfPassengers}</p>`
+              : numOfPassengersHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Phone Number:</span> ${numOfPassengersHero}</p>`
+              : ""
+          }
+          ${
+            email
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Email Adress:</span> ${email}</p>`
+              : emailHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Email Adress:</span> ${emailHero}</p>`
+              : emailContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Email Adress:</span>${emailContact}</p>`
               : ""
           }
           ${
@@ -77,21 +93,29 @@ const handler = async (req, res) => {
           ${
             date
               ? `<p><span style="font-weight: bold; font-size: 1rem;">Date Of The Ride:</span> ${date}</p>`
+              : dateHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Date Of The Ride:</span> ${dateHero}</p>`
               : ""
           }
           ${
-            pickUpLocation || pickUpLocationHero
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation.name} ${pickUpLocationHero}</p>`
+            pickUpLocation
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocation.name} \n ${pickUpLocation.lng} \n ${pickUpLocation.lat}</p>`
+              : pickUpLocationHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Pick Up Location:</span> ${pickUpLocationHero.name} ${pickUpLocationHero.lng} ${pickUpLocationHero.lat}</p>`
               : ""
           }
           ${
-            dropOfLocation || dropOfLocationHero
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Drop Of Location:</span> ${dropOfLocation.name} ${dropOfLocationHero}</p>`
+            dropOfLocation
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Drop Off Location:</span> ${dropOfLocation.name}  ${dropOfLocation.lng}  ${dropOfLocation.lat}</p>`
+              : dropOfLocationHero
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Drop Off Location:</span> ${dropOfLocationHero.name} ${dropOfLocationHero.lng} ${dropOfLocationHero.lat}</p>`
               : ""
           }
           ${
-            messages || messageContact
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Message:</span> ${messages} ${messageContact}</p>`
+            messages
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Message:</span> ${messages}</p>`
+              : messageContact
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Message:</span> ${messageContact}</p>`
               : ""
           }
           </div>

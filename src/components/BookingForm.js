@@ -46,7 +46,9 @@ const BookingForm = () => {
       values.phone &&
       values.email &&
       values.numOfPassengers &&
-      values.pickUpLocation &&
+      values.pickUpLocation.name &&
+      values.pickUpLocation.lng &&
+      values.pickUpLocation.lat &&
       values.dropOfLocation &&
       values.date &&
       values.message

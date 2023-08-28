@@ -1,5 +1,10 @@
 import React, { useState, useMemo } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  useLoadScript,
+  Marker,
+  GoogleApiWrapper,
+} from "@react-google-maps/api";
 import usePlacesAutocomplete, {
   getGeocode,
   getLatLng,
@@ -14,11 +19,14 @@ import {
 import Loader from "./Loader";
 import "@reach/combobox/styles.css";
 
+const libraries = ["places"];
 const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
   const center = useMemo(() => ({ lat: 37.0902, lng: -95.7129 }), []);
   const [selected, setSelected] = useState(null);
+  const { init } = usePlacesAutocomplete({
+    initOnMount: false, // Disable initializing when the component mounts, default is true
+  });
   const {
-    ready,
     value,
     setValue,
     suggestions: { status, data },
@@ -41,7 +49,8 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
   };
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.GOOGLE_API_KEY,
-    libraries: ["places"],
+    libraries,
+    onLoad: () => init(),
   });
 
   if (!isLoaded) return <Loader />;
@@ -54,8 +63,8 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
           id={id}
           placeholder={placeholder}
           onChange={handleInternalChange}
-          disabled={!ready}
-          className="w-full rounded-lg  border-2 border-gray-400 p-3 text-sm"
+          // disabled={!ready}
+          className="w-full rounded-lg text-gray-700  border-2 border-gray-400 p-[9.8px] text-sm"
         />
         <ComboboxPopover>
           <ComboboxList>
