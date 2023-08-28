@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import Script from "next/script";
 import {
   GoogleMap,
   useLoadScript,
@@ -21,6 +22,10 @@ import "@reach/combobox/styles.css";
 
 const libraries = ["places"];
 const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
+  <Script
+    src="//maps.googleapis.com/maps/api/js?key=AIzaSyBNED5xlWHoI5p49hvCUZseMeIEvfpO-t0ss&libraries=places"
+    strategy="beforeInteractive"
+  ></Script>;
   const center = useMemo(() => ({ lat: 37.0902, lng: -95.7129 }), []);
   const [selected, setSelected] = useState(null);
   const { init } = usePlacesAutocomplete({
