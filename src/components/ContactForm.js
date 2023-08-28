@@ -72,7 +72,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12 px-[4rem] xl:px-8">
+    <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12 xl:px-8">
       {error ? (
         <p className="text-[red] text-md font-bold py-6">
           Error: Something went wrong! Try again later!

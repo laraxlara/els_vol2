@@ -55,7 +55,7 @@ const AboutMain = () => {
             seaport and vice versa we will provide you with hourly limousine
             service with the best transport rates in Miami, Florida.
           </p>
-          <h3 className="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-200">
+          <h3 className="font-heading text-2xl xs:text-6xl md:text-7xl font-bold text-gray-200">
             <span className="block">Professional</span>
             <span>chauffeurs</span>
           </h3>
