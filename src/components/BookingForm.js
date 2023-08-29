@@ -131,6 +131,7 @@ const BookingForm = () => {
                   className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
                   placeholder="Name"
                   name="name"
+                  autoComplete="off"
                   value={values.name}
                   type="text"
                   id="name"
@@ -145,6 +146,7 @@ const BookingForm = () => {
                   className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
                   placeholder="Phone Number"
                   name="phone"
+                  autoComplete="off"
                   value={values.phone}
                   type="text"
                   id="phone"
@@ -161,6 +163,7 @@ const BookingForm = () => {
                   className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
                   placeholder="Email address"
                   name="email"
+                  autoComplete="off"
                   value={values.email}
                   type="email"
                   id="email"
@@ -177,7 +180,7 @@ const BookingForm = () => {
                   id="numOfPassengers"
                   name="numOfPassangers"
                   value={values.numOfPassengers}
-                  className="w-full h-[45px] text-gray-400 rounded-lg border-2 border-gray-400 p-3 text-sm"
+                  className="w-full h-[45px] text-gray-400 rounded-lg bg-white border-2 border-gray-400 p-3 text-sm"
                   onChange={handleChange}
                   required
                 >

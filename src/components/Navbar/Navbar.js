@@ -13,7 +13,10 @@ const Navbar = () => {
       <nav className="absolute top-0 lg:fixed flex justify-between items-center z-10 top-10 w-[85%] h-[70px] xl:h-[90px] left-[50%] translate-x-[-50%] px-[30px] bg-[#171717] rounded-2xl">
         <div
           className="text-3xl lg:hidden text-gray-600 relative"
-          onClick={() => setMobileMenu(!mobileMenu)}
+          onClick={(e) => {
+            e.preventDefault();
+            setMobileMenu(!mobileMenu);
+          }}
         >
           {mobileMenu ? (
             <>
@@ -46,7 +49,8 @@ const Navbar = () => {
               <Link
                 href="#"
                 className="flex justify-start items-center w-full"
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   setOpen(!open);
                 }}
               >
@@ -99,7 +103,8 @@ const Navbar = () => {
             <Link
               href="#"
               className="flex justify-center items-center w-full"
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
                 setOpen(!open);
               }}
             >
@@ -123,7 +128,8 @@ const Navbar = () => {
             {open ? (
               <ul className="absolute top-[90px] bg-gray-200 text-black hidden lg:grid lg:grid-cols-2 xl:grid-cols-3 rounded-lg">
                 <NavLinks
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.preventDefault();
                     setOpen(!open);
                   }}
                 />

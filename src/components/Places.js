@@ -71,6 +71,7 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
         <ComboboxInput
           value={value}
           id={id}
+          autoComplete="off"
           placeholder={placeholder}
           onChange={handleInternalChange}
           // disabled={!ready}

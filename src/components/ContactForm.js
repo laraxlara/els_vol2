@@ -106,6 +106,7 @@ const ContactForm = () => {
                   className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
                   placeholder="Name"
                   type="text"
+                  autoComplete="off"
                   name="nameContact"
                   id="nameContact"
                   onChange={handleChange}
@@ -117,6 +118,7 @@ const ContactForm = () => {
                   className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
                   placeholder="Email address"
                   type="email"
+                  autoComplete="off"
                   name="emailContact"
                   id="emailContact"
                   onChange={handleChange}
@@ -131,6 +133,7 @@ const ContactForm = () => {
                   className="w-full rounded-lg border-2 border-gray-400 p-3 text-sm"
                   placeholder="Email subject"
                   type="text"
+                  autoComplete="off"
                   name="subjectContact"
                   id="subjectContact"
                   onChange={handleChange}

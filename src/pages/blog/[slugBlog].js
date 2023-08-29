@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import path from "path";
 import fs from "fs/promises";
@@ -53,8 +54,23 @@ function projectPage({ blogData, hasError }) {
     return <h1>Loading...</h1>;
   }
 
+  const truncateString = (str, maxLength) => {
+    if (str.length <= maxLength) {
+      return str;
+    }
+    return str.substring(0, maxLength - 3) + "...";
+  };
+
   return (
     <BlogLayout>
+      <Head>
+        <title>Blog | Executive Limo Service</title>
+        <meta
+          name="description"
+          content={truncateString(blogData.text.p1, 150)}
+        />
+      </Head>
+
       <div className="m-12 flex flex-col">
         <h1 className="text-4xl my-4">{blogData.title}</h1>
         <span className="block h-[0.2px] bg-gray-400 my-10 rounded-full"></span>
