@@ -8,16 +8,31 @@ import BookHome from "@/sections/BookHome";
 import ServicesHome from "@/sections/ServicesHome";
 
 export default function Home() {
+  const truncateString = (str, maxLength) => {
+    if (str.length <= maxLength) {
+      return str;
+    }
+    return str.substring(0, maxLength - 3) + "...";
+  };
+
+  const description =
+    "Executive Limo Service is a luxury transportation service established in 2017. that offers an extensive fleet of vehicles to fulfill all your needs. Our mission is to provide our clients the best possible experience with our comfortable and safe ride. We are constantly elevating our service because our clients are our number one priority.";
   return (
     <>
       <Head>
-        <title>Executive Limo Service</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+          Executive Limo Service | Limo Service Miami | Car Service Miami |
+          Executive Limo Service
+        </title>
         <meta
           name="description"
-          content="Executive Limo Service is a luxury transportation service established in 2017. that offers an extensive fleet of vehicles to fulfill all your needs. Our mission is to provide our clients the best possible experience with our comfortable and safe ride."
+          content={truncateString(description, 150)}
           key="desc"
         />
         <link rel="icon" href="/images/logo.png" sizes="any" />
+        <meta name="language" content="en" />
       </Head>
       <Layout>
         <Hero />

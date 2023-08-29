@@ -64,11 +64,15 @@ function projectPage({ blogData, hasError }) {
   return (
     <BlogLayout>
       <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Blog | Executive Limo Service</title>
         <meta
           name="description"
           content={truncateString(blogData.text.p1, 150)}
         />
+        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <meta name="language" content="en" />
       </Head>
 
       <div className="m-12 flex flex-col">

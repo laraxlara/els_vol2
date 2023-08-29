@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 import path from "path";
 import fs from "fs/promises";
 import ServicesLayout from "@/layouts/servicesLayout";
@@ -56,8 +57,26 @@ function projectPage({ serviceData, hasError }) {
     return <h1>Loading...</h1>;
   }
 
+  const truncateString = (str, maxLength) => {
+    if (str.length <= maxLength) {
+      return str;
+    }
+    return str.substring(0, maxLength - 3) + "...";
+  };
+
   return (
     <ServicesLayout>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Services | Executive Limo Service</title>
+        <meta
+          name="description"
+          content={truncateString(serviceData.description, 150)}
+        />
+        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <meta name="language" content="en" />
+      </Head>
       <div className="m-2 flex flex-col">
         <Service
           description={serviceData.description}
