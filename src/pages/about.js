@@ -17,7 +17,7 @@ const About = () => {
           content="Executive Limo Service is a luxury transportation service established in 2017. that offers an extensive fleet of vehicles to fulfill all your needs. Our mission is to provide our clients the best possible experience with our comfortable and safe ride."
           key="desc"
         />
-        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="icon" href="/images/favicon.png" sizes="any" />
         <meta name="language" content="en" />
       </Head>
       <Layout>

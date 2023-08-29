@@ -74,7 +74,7 @@ function projectPage({ serviceData, hasError }) {
           name="description"
           content={truncateString(serviceData.description, 150)}
         />
-        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="icon" href="/images/favicon.png" sizes="any" />
         <meta name="language" content="en" />
       </Head>
       <div className="m-2 flex flex-col">

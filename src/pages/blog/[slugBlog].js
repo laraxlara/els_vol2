@@ -71,7 +71,7 @@ function projectPage({ blogData, hasError }) {
           name="description"
           content={truncateString(blogData.text.p1, 150)}
         />
-        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="icon" href="/images/favicon.png" sizes="any" />
         <meta name="language" content="en" />
       </Head>
 

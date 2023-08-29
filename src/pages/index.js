@@ -31,7 +31,7 @@ export default function Home() {
           content={truncateString(description, 150)}
           key="desc"
         />
-        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="icon" href="/images/favicon.png" sizes="any" />
         <meta name="language" content="en" />
       </Head>
       <Layout>
