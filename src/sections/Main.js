@@ -20,7 +20,7 @@ const Main = () => {
             href="/about"
             className="inline-flex items-center justify-center px-5 py-3 mr-3 text-gray-900 font-medium text-center rounded-lg bg-[#F7BE38] hover:bg-[#F7BE38]/90"
           >
-            Learn more
+            Learn more about us
             <svg
               className="w-5 h-5 ml-2 -mr-1"
               fill="currentColor"
