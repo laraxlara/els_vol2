@@ -207,7 +207,10 @@ const HeroForm = () => {
               </div>
 
               <div className="px-2">
-                <label className="block my-2 text-sm font-medium text-gray-100 ">
+                <label
+                  htmlFor="numOfPassengersHero"
+                  className="block my-2 text-sm font-medium text-gray-100 "
+                >
                   Number Of Passengers
                 </label>
 

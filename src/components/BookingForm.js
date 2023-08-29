@@ -170,7 +170,7 @@ const BookingForm = () => {
               </div>
 
               <div>
-                <label className="text-gray-500 pl-2">
+                <label htmlFor="numOfPassengers" className="text-gray-500 pl-2">
                   Number Of Passengers
                 </label>
                 <select

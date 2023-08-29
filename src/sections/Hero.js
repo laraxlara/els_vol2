@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="bg-transparent h-full xl:h-[100vh]">
       <div className="px-4 mx-auto my-0 max-w-screen-xl text-center flex flex-col justify-center">
         <div className="flex justify-center items-center">
-          <Image src={logo} alt="Logo" width={200} />
+          <Image src={logo} alt="Logo" width={200} priority />
         </div>
         <h1 className="mb-8 text-3xl md:text-4xl font-extrabold text-white tracking-tight md:text-5xl lg:text-6xl">
           Miami`s Luxury Limousine Service
