@@ -42,7 +42,7 @@ const About = () => {
           content="Executive Limo Service in Miami offers luxury car rentals for various occasions. Choose from our premium fleet and enjoy first-class transportation."
         />
         <meta name="twitter:image" content="/images/og.png" />
-        <link rel="canonical" href="https://executivelimomiami.com/" />
+        <link rel="canonical" href="https://executivelimomiami.com/about/" />
       </Head>
       <Layout>
         <section className="mt-[-200px] pt-[10rem] lg:pt-[15rem] bg-black xl:bg-opacity-50">
