@@ -1,5 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
-import Script from "next/script";
+import React, { useState, useMemo } from "react";
 import {
   GoogleMap,
   useLoadScript,
@@ -62,7 +61,7 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
           autoComplete="off"
           placeholder={placeholder}
           onChange={handleInternalChange}
-          disabled={!ready}
+          // disabled={!ready}
           required
           className="w-full rounded-lg text-gray-700  border-2 border-gray-400 p-[9.8px] text-sm"
         />
