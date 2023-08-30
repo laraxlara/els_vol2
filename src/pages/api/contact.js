@@ -28,8 +28,8 @@ const handler = async (req, res) => {
 
   try {
     await transporter.sendMail({
-      to: "laraxlara97@gmail.com",
-      from: `lara@gmail.com`,
+      to: "niko@executivelimoservice.net",
+      from: `niko@executivelimoservice.net`,
       replyTo: `${
         email ? email : emailHero ? emailHero : emailContact ? emailContact : ""
       }`,
