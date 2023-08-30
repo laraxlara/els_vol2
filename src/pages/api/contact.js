@@ -21,42 +21,40 @@ const handler = async (req, res) => {
     messages,
     messageContact,
   } = req.body;
-  console.log(name);
 
   if (req.method !== "POST") {
-    return res.status(404).send({ status: "fail", error: "Begone." });
+    return res.status(404).send({ status: "404", error: "Not found." });
   }
 
   try {
-    // if (!subject || !subject.trim()) {
-    //   throw new Error("Please provide a valid name.");
-    // }
-
-    // if (!email || !email.trim()) {
-    //   throw new Error("Please provide a valid email address.");
-    // }
-
-    // if (!message || !message.trim()) {
-    //   throw new Error("Please provide a valid email message.");
-    // }
-
     await transporter.sendMail({
       to: "laraxlara97@gmail.com",
       from: `lara@gmail.com`,
-      replyTo: `lara@gmail.com`,
+      replyTo: `${
+        email ? email : emailHero ? emailHero : emailContact ? emailContact : ""
+      }`,
       subject: `Executive Limo Service`,
       text: "message",
       html: `
       <div style="width: 100%; background-color: #f3f9ff; padding: 5rem 0">
       <div style="max-width: 700px; background-color: white; margin: 0 auto">
-        <div style="width: 100%; background-color: #00efbc; padding: 20px 0">
+        <div style="width: 100%; background-color: #F7BE38; padding: 20px 0">
         
         </div>
         <div style="width: 100%; gap: 10px; padding: 30px 0; display: grid">
-          <p style="font-weight: 800; font-size: 1.2rem; padding: 0 30px">
-            Executive Limo Service - Form
+          <p style="font-weight: 800; font-size: 1.5rem; padding: 0 30px">
+            Executive Limo Service
           </p>
           <div style="font-size: .8rem; margin: 0 30px">
+          ${
+            email
+              ? `<p style="font-weight: bold; font-size: 1.4rem;">BOOKING FORM</p>`
+              : emailHero
+              ? `<p style="font-weight: bold; font-size: 1.4rem;">CHECK AVAILABILITY FORM</p>`
+              : emailContact
+              ? `<p style="font-weight: bold; font-size: 1.4rem;">CONTACT FORM</p>`
+              : ""
+          }
           ${
             name
               ? `<p><span style="font-weight: bold; font-size: 1rem;">Name:</span> ${name}</p>`
@@ -71,9 +69,9 @@ const handler = async (req, res) => {
           }
           ${
             numOfPassengers
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Phone Number:</span> ${numOfPassengers}</p>`
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Number Of Passengers:</span> ${numOfPassengers}</p>`
               : numOfPassengersHero
-              ? `<p><span style="font-weight: bold; font-size: 1rem;">Phone Number:</span> ${numOfPassengersHero}</p>`
+              ? `<p><span style="font-weight: bold; font-size: 1rem;">Number Of Passengers:</span> ${numOfPassengersHero}</p>`
               : ""
           }
           ${

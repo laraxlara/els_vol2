@@ -16,7 +16,7 @@ import {
   ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
-import Loader from "./Loader";
+import LoaderInput from "./LoaderInput";
 import "@reach/combobox/styles.css";
 
 const libraries = ["places"];
@@ -50,7 +50,7 @@ const PlacesAutocomplete = ({ onSelect, id, placeholder }) => {
 
     if (onSelect) onSelect({ lat, lng, value: results[0].formatted_address });
   };
-  if (!ready) return <Loader />;
+  if (!ready) return <LoaderInput />;
 
   return (
     <>
