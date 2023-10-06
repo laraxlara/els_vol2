@@ -20,7 +20,7 @@ const fleet = [
   },
   {
     id: 2,
-    src: fleet2,
+    src: fleet4,
     alt: "Luxury Sedan Mercedes E Class",
     name: "Luxury Sedan Mercedes E Class",
     char: "Max People: 3 || Max Luggage: 3",
@@ -28,7 +28,7 @@ const fleet = [
   },
   {
     id: 3,
-    src: fleet3,
+    src: fleet2,
     alt: "Executive SUV Chevy Suburban",
     name: "Executive SUV Chevy Suburban",
     char: "Max People: 6 || Max Luggage: 6",
@@ -36,7 +36,7 @@ const fleet = [
   },
   {
     id: 4,
-    src: fleet4,
+    src: fleet5,
     alt: "Luxury SUV Cadillac Escalade",
     name: "Luxury SUV Cadillac Escalade",
     char: "Max People: 6 || Max Luggage: 6",
@@ -45,7 +45,7 @@ const fleet = [
   },
   {
     id: 5,
-    src: fleet5,
+    src: fleet3,
     alt: "Luxury SUV Mercedes Sprinter",
     name: "Luxury SUV Mercedes Sprinter",
     char: "Max People: 14 || Max Luggage: 14",
@@ -69,8 +69,8 @@ const Fleet = () => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-          Chauffeured Black Car Service | Executive Limo Service | Limo Service
-          Miami
+          Fleet | Chauffeured Black Car Service | Executive Limo Service | Limo
+          Service Miami
         </title>
         <meta
           name="description"
@@ -112,9 +112,12 @@ const Fleet = () => {
               <span>Black Car Service</span>
               <span className="block font-serif italic">Miami</span>
             </h1>
-            <h2 className="flex flex-col gap-6 font-heading text-lg my-12 text-gray-200 text-center">
+            <h2 className="flex flex-col gap-6 font-heading text-lg my-4 text-gray-200 text-center">
               Executive Limo Service
             </h2>
+            <h3 className="flex flex-col gap-2 font-heading text-lg my-2 text-gray-200 text-center">
+              Fleet
+            </h3>
             <p className="my-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
               Discover the epitome of personalized luxury travel with our
               chauffeured black car service in Miami, where attention to detail
