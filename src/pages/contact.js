@@ -1,9 +1,18 @@
 import React from "react";
 import Head from "next/head";
+import { useEffect } from "react";
 import Layout from "@/layouts/mainLayout";
 import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
+  useEffect(() => {
+    window.dataLayer.push({
+      event: "conversion",
+      send_to: `${process.env.NEXT_PUBLIC_CONVERSION_TAG}`,
+      value: 1.0, // Adjust the value based on your conversion
+      currency: "USD",
+    });
+  }, []);
   const truncateString = (str, maxLength) => {
     if (str.length <= maxLength) {
       return str;
