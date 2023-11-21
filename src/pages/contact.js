@@ -1,18 +1,18 @@
 import React from "react";
 import Head from "next/head";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Layout from "@/layouts/mainLayout";
 import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
-  useEffect(() => {
-    window.dataLayer.push({
-      event: "conversion",
-      send_to: `${process.env.NEXT_PUBLIC_CONVERSION_TAG}`,
-      value: 1.0, // Adjust the value based on your conversiondswc
-      currency: "USD",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.dataLayer.push({
+  //     event: "conversion",
+  //     send_to: `${process.env.NEXT_PUBLIC_CONVERSION_TAG}`,
+  //     value: 1.0, // Adjust the value based on your conversiondswc
+  //     currency: "USD",
+  //   });
+  // }, []);
 
   const truncateString = (str, maxLength) => {
     if (str.length <= maxLength) {
@@ -61,6 +61,15 @@ const Contact = () => {
         />
         <meta name="twitter:image" content="/images/og.png" />
         <link rel="canonical" href="https://executivelimomiami.com/contact/" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {
+                'send_to': '${process.env.NEXT_PUBLIC_CONVERSION_ID}/${process.env.NEXT_PUBLIC_CONVERSION_LABEL}'
+              });
+            `,
+          }}
+        />
       </Head>
       <Layout>
         <h2 className="flex flex-col gap-6 font-heading mb-24 text-4xl text-gray-200 text-center font-bold">
