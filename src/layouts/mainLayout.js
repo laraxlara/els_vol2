@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
-import { useRouter } from "next/router";
-import { GTMHook } from "react-gtm-module";
+import React from "react";
+// import { useRouter } from "next/router";
 import Head from "next/head";
 import Navbar from "@/components/Navbar/Navbar";
 import FAQ from "@/sections/FAQ";
@@ -8,30 +7,30 @@ import Footer from "@/components/Footer";
 import { PropTypes } from "prop-types";
 
 const Layout = ({ children }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    // Initialize Google Tag Manager
-    const initializeGTM = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "YOUR_GTM_ID_HERE");
-    };
+  // useEffect(() => {
+  //   // Initialize Google Tag Manager
+  //   const initializeGTM = () => {
+  //     window.dataLayer = window.dataLayer || [];
+  //     function gtag() {
+  //       window.dataLayer.push(arguments);
+  //     }
+  //     gtag("js", new Date());
+  //     gtag("config", `${process.env.NEXT_PUBLIC_GOOGLE_ADS}`);
+  //   };
 
-    initializeGTM();
+  //   initializeGTM();
 
-    // Track page view on route change
-    const handleRouteChange = (url) => {
-      window.dataLayer.push({ event: "page_view", page: url });
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+  //   // Track page view on route change
+  //   const handleRouteChange = (url) => {
+  //     window.dataLayer.push({ event: "page_view", page: url });
+  //   };
+  //   router.events.on("routeChangeComplete", handleRouteChange);
+  //   return () => {
+  //     router.events.off("routeChangeComplete", handleRouteChange);
+  //   };
+  // }, [router.events]);
   return (
     <>
       <Head>
