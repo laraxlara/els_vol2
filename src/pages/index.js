@@ -8,14 +8,14 @@ import BookHome from "@/sections/BookHome";
 import ServicesHome from "@/sections/ServicesHome";
 
 export default function Home() {
-  useEffect(() => {
-    window.dataLayer.push({
-      event: "conversion",
-      send_to: `${process.env.NEXT_PUBLIC_CONVERSION_TAG}`,
-      value: 1.0, // Adjust the value based on your conversion
-      currency: "USD",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.dataLayer.push({
+  //     event: "conversion",
+  //     send_to: `${process.env.NEXT_PUBLIC_CONVERSION_TAG}`,
+  //     value: 1.0, // Adjust the value based on your conversion
+  //     currency: "USD",
+  //   });
+  // }, []);
   const truncateString = (str, maxLength) => {
     if (str.length <= maxLength) {
       return str;
