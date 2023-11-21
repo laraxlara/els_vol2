@@ -13,11 +13,11 @@ const BlogLayout = ({ children }) => {
       <Navbar />
       <div className="max-w-screen-xl mx-auto">
         <div className="mr-auto place-self-center px-12 xl:px-0  lg:col-span-7">
-          <h1 className="max-w-2xl mb-4 pt-[10rem] text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          <h1 className="max-w-2xl mb-4 pt-[10rem] text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
             Miami Limousine Service Blog
           </h1>
           <span className="block h-2 bg-[#F7BE38] bg-opacity-50 my-10 rounded-full"></span>
-          <h2 className="max-w-2xl mb-6 font-light text-gray-100 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-200">
+          <h2 className="max-w-2xl mb-6 font-light text-gray-100 lg:mb-8 md:text-lg lg:text-xl text-gray-200">
             Executive Limo Service
           </h2>
         </div>
