@@ -93,15 +93,6 @@ const Layout = ({ children }) => {
             `,
           }}
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              gtag('event', 'conversion', {
-                'send_to': '${process.env.NEXT_PUBLIC_CONVERSION_ID}/${process.env.NEXT_PUBLIC_CONVERSION_LABEL2}'
-              });
-            `,
-          }}
-        />
       </Head>
       <div className="home-page-container">
         <div className="h-[200px] py-[50px]">
