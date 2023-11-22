@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Layout from "@/layouts/mainLayout";
 import Hero from "@/sections/Hero";
@@ -6,16 +6,16 @@ import Main from "@/sections/Main";
 import PricingSection from "@/sections/PricingSection";
 import BookHome from "@/sections/BookHome";
 import ServicesHome from "@/sections/ServicesHome";
+import TagManager from "react-gtm-module";
 
 export default function Home() {
-  // useEffect(() => {
-  //   window.dataLayer.push({
-  //     event: "conversion",
-  //     send_to: `${process.env.NEXT_PUBLIC_CONVERSION_TAG}`,
-  //     value: 1.0, // Adjust the value based on your conversion
-  //     currency: "USD",
-  //   });
-  // }, []);
+  useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: `${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}`, // Replace with your GTM ID
+    };
+    TagManager.initialize(tagManagerArgs);
+  }, []);
+
   const truncateString = (str, maxLength) => {
     if (str.length <= maxLength) {
       return str;

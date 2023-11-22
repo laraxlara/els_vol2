@@ -7,34 +7,10 @@ import Footer from "@/components/Footer";
 import { PropTypes } from "prop-types";
 
 const Layout = ({ children }) => {
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   // Initialize Google Tag Manager
-  //   const initializeGTM = () => {
-  //     window.dataLayer = window.dataLayer || [];
-  //     function gtag() {
-  //       window.dataLayer.push(arguments);
-  //     }
-  //     gtag("js", new Date());
-  //     gtag("config", `${process.env.NEXT_PUBLIC_GOOGLE_ADS}`);
-  //   };
-
-  //   initializeGTM();
-
-  //   // Track page view on route change
-  //   const handleRouteChange = (url) => {
-  //     window.dataLayer.push({ event: "page_view", page: url });
-  //   };
-  //   router.events.on("routeChangeComplete", handleRouteChange);
-  //   return () => {
-  //     router.events.off("routeChangeComplete", handleRouteChange);
-  //   };
-  // }, [router.events]);
   return (
     <>
       <Head>
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -93,6 +69,15 @@ const Layout = ({ children }) => {
             `,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {
+                'send_to': '${process.env.NEXT_PUBLIC_CONVERSION_ID}/${process.env.NEXT_PUBLIC_CONVERSION_LABEL2}'
+              });
+            `,
+          }}
+        /> */}
       </Head>
       <div className="home-page-container">
         <div className="h-[200px] py-[50px]">
