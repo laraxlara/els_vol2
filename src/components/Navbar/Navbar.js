@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
 import { CiMenuBurger } from "react-icons/ci";
@@ -17,10 +17,6 @@ const Navbar = () => {
       send_to: `${process.env.NEXT_PUBLIC_GOOGLE_ADS}/${process.env.NEXT_PUBLIC_GOOGLE_LABEL}`,
     });
   };
-
-  useEffect(() => {
-    initDataLayer();
-  }, []);
 
   return (
     <div className="">

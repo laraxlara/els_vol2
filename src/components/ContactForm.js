@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Loader from "./Loader";
+import { gtag, initDataLayer } from "ga-gtag";
 
 const ContactForm = () => {
   const [sent, setSent] = useState(false);
@@ -69,6 +70,15 @@ const ContactForm = () => {
       messageContact: "",
     });
     setShouldResetForm(false);
+  };
+
+  const onClickConversionEvent2 = () => {
+    if (typeof window === "undefined") return;
+    initDataLayer();
+    gtag("config", `${process.env.NEXT_PUBLIC_GOOGLE_ADS}`);
+    gtag("event", "conversion", {
+      send_to: `${process.env.NEXT_PUBLIC_GOOGLE_ADS}/${process.env.NEXT_PUBLIC_GOOGLE_LABEL2}`,
+    });
   };
 
   return (
@@ -157,6 +167,7 @@ const ContactForm = () => {
             <div className="mt-4">
               <button
                 type="submit"
+                onClick={onClickConversionEvent2()}
                 className="inline-block w-full rounded-lg bg-[#171717] px-5 py-3 font-medium text-white sm:w-auto"
               >
                 Send Message
