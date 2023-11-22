@@ -1,12 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
+import { gtag, initDataLayer } from "ga-gtag";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const onClickConversionEvent = () => {
+    if (typeof window === "undefined") return;
+    initDataLayer();
+    gtag("config", `${process.env.NEXT_PUBLIC_GOOGLE_ADS}`);
+    gtag("event", "conversion", {
+      send_to: `${process.env.NEXT_PUBLIC_GOOGLE_ADS}/${process.env.NEXT_PUBLIC_GOOGLE_LABEL}`,
+    });
+  };
+
+  useEffect(() => {
+    initDataLayer();
+  }, []);
 
   return (
     <div className="">
@@ -142,6 +156,7 @@ const Navbar = () => {
         </ul>
         <a
           href="tel:1305-570-2684"
+          onClick={onClickConversionEvent()}
           className="mt-2 text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 rounded-lg text-sm py-2.5 text-center inline-flex pl-2 pr-5 items-center dark:focus:ring-[#F7BE38]/50 mr-2 mb-2"
         >
           <svg

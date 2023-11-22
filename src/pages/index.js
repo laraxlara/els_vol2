@@ -7,6 +7,7 @@ import PricingSection from "@/sections/PricingSection";
 import BookHome from "@/sections/BookHome";
 import ServicesHome from "@/sections/ServicesHome";
 import TagManager from "react-gtm-module";
+import { install } from "ga-gtag";
 
 export default function Home() {
   useEffect(() => {
@@ -14,6 +15,7 @@ export default function Home() {
       gtmId: `${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}`, // Replace with your GTM ID
     };
     TagManager.initialize(tagManagerArgs);
+    install(tagManagerArgs.gtmId);
   }, []);
 
   const truncateString = (str, maxLength) => {

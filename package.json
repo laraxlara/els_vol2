@@ -19,6 +19,7 @@
     "dotenv-cli": "^7.3.0",
     "eslint-config-next": "13.3.0",
     "flowbite-datepicker": "^1.2.2",
+    "ga-gtag": "^1.2.0",
     "next": "13.3.0",
     "nodemailer": "^6.9.4",
     "postcss": "8.4.21",
