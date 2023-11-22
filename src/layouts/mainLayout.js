@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
             `,
           }}
         />
-        {/* <script
+        <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         ></script>
@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
             `,
           }}
         />
-         <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               gtag('event', 'conversion', {
@@ -101,7 +101,7 @@ const Layout = ({ children }) => {
               });
             `,
           }}
-        /> */}
+        />
       </Head>
       <div className="home-page-container">
         <div className="h-[200px] py-[50px]">
