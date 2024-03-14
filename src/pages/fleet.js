@@ -7,7 +7,7 @@ import fleet1 from "../../public/images/fleet1.jpg";
 import fleet2 from "../../public/images/fleet2.jpg";
 import fleet3 from "../../public/images/fleet3.jpg";
 import fleet4 from "../../public/images/fleet4.jpg";
-import fleet5 from "../../public/images/fleet5.jpg";
+import fleet5 from "../../public/images/fleet5.png";
 
 const fleet = [
   {
@@ -21,8 +21,8 @@ const fleet = [
   {
     id: 2,
     src: fleet4,
-    alt: "Luxury Sedan Mercedes E Class",
-    name: "Luxury Sedan Mercedes E Class",
+    alt: "Luxury Sedan Mercedes S Class",
+    name: "Luxury Sedan Mercedes S Class",
     char: "Max People: 3 || Max Luggage: 3",
     description: "Ultimate offer for luxorious and high class rides.",
   },
