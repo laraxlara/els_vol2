@@ -12,7 +12,16 @@ const Layout = ({ children }) => {
       <Head></Head>
       <div className="home-page-container">
         <div className="h-[200px] py-[50px]">
-          <video autoPlay loop muted playsInline src={"/videos/video.mp4"} />
+          {/* <video autoPlay loop muted playsInline src={"/videos/video.mp4"} /> */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full aspect-square object-cover"
+          >
+            <source src={"/videos/video.mp4"} type="video/mp4" />
+          </video>
         </div>
         <Navbar />
         <main className="relative z-1">{children}</main>
